@@ -3,16 +3,12 @@
  cache:
    directories:
      - node_modules
- script:
-   - npm test
  env:
    - CI=true
 
  before_deploy:
    - npm install netlify-cli -g
    # - npm run build
-
-node_js: node
  deploy:
    provider: script
    script: netlify deploy -s  "http://5a466bed4c4b9336530eabfc.tender-mirzakhani-ff883e.netlify.com" -t "9314c5694d88c3ca84a2754be81e7468376c345c1521e28c88766f06ab0fc84f" -p ./build
