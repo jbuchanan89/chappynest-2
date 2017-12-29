@@ -3,6 +3,8 @@
  cache:
    directories:
      - node_modules
+ script:
+   - npm test
  env:
    - CI=true
 
