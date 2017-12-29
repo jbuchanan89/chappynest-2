@@ -1,4 +1,17 @@
-language: node_js
+ language: node_js
+ node_js: node
+ cache:
+   directories:
+     - node_modules
+ script:
+   - npm test
+ env:
+   - CI=true
+
+ before_deploy:
+   - npm install netlify-cli -g
+   # - npm run build
+
 node_js: node
  deploy:
    provider: script
