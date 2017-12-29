@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+	font-family: helvetica; 
+}
+
+body {
+	margin: 0;
+}
+
+.nav-bar ul{
+	list-style: none;
+	margin-top: 0;
+}
+
+.nav-bar ul li {
+	display: inline-block;
+	float: right;
+	margin:10px 20px;
+}
+.nav-bar {
+	height: 50px;
+}
+.nav-bar p {
+	float: left;
+	margin: 10px 20px;
+}
+
+.nav-bar, footer {
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	color: #fff;
+}
+
+.summary {
+	background-color: #ccc;
+	margin: 0;
+}
+
+.summary-info {
+	text-align: center;
+	margin: 80px;
+	background-color: rgba(255,255,255,.5);
+	padding: 10px;
+}
+
+.info {
+	background-color: #fff;
+	text-align: center;
+	color: #000;
+}
+
+.detail {
+	border: 1px solid #CCC;
+	margin: 20px 0 20px 4.16%;
+	padding: 50px;
+}
+
+.child {
+	border: 1px solid black;
+	margin: 50px;
+
+}
+
+.icon {
+	margin: 20px;
+	border: 1px solid black;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	padding-top: 40px;
+}
+
+
+.child ul {
+	list-style: none;
+}
+
+.child p {
+	margin: 20px;
+}
+
+.chores-today {
+	border: 1px solid black;
+	background-color: #fff;
+	margin: 20px;
+}
+
+.sign-in {
+	text-decoration: underline;
+}
+
+
+.check-box ul {
+	list-style: none;
+}
+
+
+.complete {
+	width: 40px;
+	height: 10px;
+	background-color: black;
+	border: 1px solid black;
+}
+
+
+
+/*****************ACCOUNT INFO******/
+
+.account-info {
+	width: 400px;
+	margin: 60px auto;
+	border: 1px solid black;
+	padding: 10px;
+}
+
+.account-info h2, .account-info h3{
+	text-align: center;
+}
+
+.account-info ul li {
+	list-style:  none;
+}
+
+
+/*******CHILD PROFILE*******/
+
+.child-profile h2, .child-profile h3 {
+	text-align: center;
+}
+
+
+/******SIGN IN*********/
+
+.sign-up, .login {
+	width: 400px;
+	border: 1px solid black;
+	margin: 40px auto;
+	padding: 20px;
+}
+
+.login h2 {
+	text-align: center;
+}
+
+  /*********************GRID**************************************/
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
