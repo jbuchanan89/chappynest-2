@@ -13,7 +13,7 @@
    # - npm run build
  deploy:
    provider: script
-   script: netlify deploy -s $NETLIFY_SITE_ID -t $NETLIFY_ACCESS_TOKEN -p ./build
+   script: netlify deploy -p ./build -t 9314c5694d88c3ca84a2754be81e7468376c345c1521e28c88766f06ab0fc84f -s http://5a466bed4c4b9336530eabfc.tender-mirzakhani-ff883e.netlify.com
    skip_cleanup: true
    on:
      branch: master
