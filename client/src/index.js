@@ -23,7 +23,7 @@ class Root extends React.Component{
 	constructor(){
 		super();
 		// localStorage.setItem('user',{});
-		console.log(localStorage.getItem('user'));
+		console.log(localStorage.getItem('name'));
 		this.loginUser = this.loginUser.bind(this);
 		this.logoutUser = this.logoutUser.bind(this);
 	}
@@ -56,8 +56,7 @@ class Root extends React.Component{
 				return (
 					<Login loginUser={this.loginUser} {...props} />
 				)
-			}
-			
+			}	
 		}
 
 		const ParentDashboardPage = (props) => {

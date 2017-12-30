@@ -8,6 +8,7 @@ function getChores(cb) {
     .then(cb);
 }
 
+
 function getDailyTask(cb){
   return fetch('api/dailytask/'+ localStorage.getItem('ChappyNest-userID'), {
     accept: "application/json"
@@ -122,8 +123,6 @@ function checkStatus(response) {
 function parseJSON(response) {
   return response.json();
 }
-
-
 
 const Client = { markTaskCompleted, parentDashboardGetTask, addTask, login, getChores, getDailyTask, addChore, getChildAccounts, addAccount };
 export default Client;
