@@ -8,7 +8,7 @@ import React from 'react';
 			<header className="nav-bar">
 				<ul>
 					<a href={'/' + props.link1}><li>{props.link1}</li></a>
-					 <a href={'/' + props.link2}><li>{props.link2}</li></a>
+					<a href={'/' + props.link2}><li>{props.link2}</li></a>
 				</ul>
 			</header>
 		</div>
