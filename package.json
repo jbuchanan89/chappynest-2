@@ -1,32 +1,21 @@
 {
-  "name": "chappynest-2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jbuchanan89/chappynest-2.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jbuchanan89/chappynest-2/issues"
-  },
-  "homepage": "https://github.com/jbuchanan89/chappynest-2#readme",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "babel-core": "^6.14.0",
-    "bcrypt": "^1.0.3",
-    "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.18.2",
-    "express": "^4.13.3",
-    "fs": "0.0.2",
     "moment": "^2.20.1",
-    "mongoose": "^4.13.4",
-    "node": "^9.3.0",
-    "passport": "^0.4.0",
-    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-browser-router": "^2.0.3",
+    "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
-    "sql.js": "0.3.2"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }

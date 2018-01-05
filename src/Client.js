@@ -2,7 +2,7 @@
 import {API_BASE_URL} from './config';
 
 function getChores(cb) {
-  return fetch('api/chores/'+ localStorage.getItem('ChappyNest-userID'), {
+  return fetch('${API_BASE_URL}/chores/'+ localStorage.getItem('ChappyNest-userID'), {
     accept: "application/json"
   })
     .then(checkStatus)
@@ -11,7 +11,7 @@ function getChores(cb) {
 }
 
 function getDailyTask(cb){
-  return fetch('api/dailytask/'+ localStorage.getItem('ChappyNest-userID'), {
+  return fetch('${API_BASE_URL}/dailytask/'+ localStorage.getItem('ChappyNest-userID'), {
     accept: "application/json"
   })
   .then(checkStatus)
@@ -20,7 +20,7 @@ function getDailyTask(cb){
 }
 
 function parentDashboardGetTask(day,cb){
-  return fetch('api/parent_task/' + localStorage.getItem('ChappyNest-userID')+'/'+day, {
+  return fetch('${API_BASE_URL}/parent_task/' + localStorage.getItem('ChappyNest-userID')+'/'+day, {
   })
   .then(checkStatus)
   .then(parseJSON)
@@ -28,7 +28,7 @@ function parentDashboardGetTask(day,cb){
 }
 
 function addTask(task,cb){
-  return fetch('api/dailytask', {
+  return fetch('${API_BASE_URL}/dailytask', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -43,7 +43,7 @@ function addTask(task,cb){
 }
 
 function markTaskCompleted(id,completed,cb){
-  return fetch('api/dailytask/'+id+'/'+completed, {
+  return fetch('${API_BASE_URL}/dailytask/'+id+'/'+completed, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -57,7 +57,7 @@ function markTaskCompleted(id,completed,cb){
 }
 
 function addChore(chore,cb){
-  return fetch('api/chore', {
+  return fetch('${API_BASE_URL}/chore', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -72,7 +72,7 @@ function addChore(chore,cb){
 }
 
 function getChildAccounts(cb){
-  return fetch('api/account/'+ localStorage.getItem('ChappyNest-userID'), {
+  return fetch('${API_BASE_URL}/account/'+ localStorage.getItem('ChappyNest-userID'), {
     accept: "application/json"
   })
     .then(checkStatus)
@@ -81,7 +81,7 @@ function getChildAccounts(cb){
 }
 
 function addAccount(user,cb){
-  return fetch('api/account', {
+  return fetch('${API_BASE_URL}/account', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -96,7 +96,7 @@ function addAccount(user,cb){
 }
 
 function login(user,cb){
-  return fetch('http://localhost:3001/api/login', {
+  return fetch('${API_BASE_URL}/login', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

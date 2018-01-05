@@ -17,9 +17,11 @@ body {
 	float: right;
 	margin:10px 20px;
 }
+
 .nav-bar {
 	height: 50px;
 }
+
 .nav-bar p {
 	float: left;
 	margin: 10px 20px;
@@ -28,6 +30,7 @@ body {
 .nav-bar, footer {
 	text-align: center;
 }
+
 h1 {
 	text-align: center;
 	color: #fff;
@@ -73,7 +76,6 @@ h1 {
 	padding-top: 40px;
 }
 
-
 .child ul {
 	list-style: none;
 }
@@ -92,11 +94,9 @@ h1 {
 	text-decoration: underline;
 }
 
-
 .check-box ul {
 	list-style: none;
 }
-
 
 .complete {
 	width: 40px;
@@ -125,15 +125,19 @@ h1 {
 }
 
 
-/*******CHILD PROFILE*******/
 
+
+
+/*******CHILD PROFILE*******/
 .child-profile h2, .child-profile h3 {
 	text-align: center;
 }
 
 
-/******SIGN IN*********/
 
+
+
+/******SIGN IN*********/
 .sign-up, .login {
 	width: 400px;
 	border: 1px solid black;
@@ -144,6 +148,10 @@ h1 {
 .login h2 {
 	text-align: center;
 }
+
+
+
+
 
   /*********************GRID**************************************/
 
