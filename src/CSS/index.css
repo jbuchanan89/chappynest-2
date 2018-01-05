@@ -91,13 +91,18 @@ body {
 .info .detail {
 	color: #FFB74C;
 	font-weight: bold;
-	margin: 40px 0 50px 4.16%;
-	padding: 50px;
+	font-size: 30px;
+	margin: 20px 16.67%;
+	padding: 30px;
 	background-color: white;
 	box-shadow: 2px 2px 2px 2px #D3D3D3;
 	border-radius: 70%;
 }
 
+.detail p {
+	text-align: center;
+	vertical-align: middle;
+}
 footer {
 	height: 50px;
 	background-color: #FFB74C;

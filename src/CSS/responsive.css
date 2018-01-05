@@ -1,5 +1,15 @@
 @media only screen and (min-width: 961px) {
 
+	.info {
+		wdith: auto;
+		margin: 0 auto;
+	}
+
+	.info .detail{
+		width: 25%;
+		margin: 4%;
+	}
+
 	.dashboardKids, 
 	.myKids{
 	  width: 100%;

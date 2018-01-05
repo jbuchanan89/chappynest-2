@@ -28,16 +28,16 @@ class HomePage extends React.Component{
 			<div className="col-12 info">
 				<h2>What does this site do? </h2>
 
-				<div className="detail col-11">
-					<p>Detail 1</p>
+				<div className="detail col-8">
+					<p>Add Household Chores</p>
 				</div>
 
-				<div className="detail col-11">
-					<p>Detail 2</p>
+				<div className="detail col-8">
+					<p>Assign Chores to Children</p>
 				</div>
 
-				<div className="detail col-11">
-					<p>Detail 3</p>
+				<div className="detail col-8">
+					<p>Mark Chores Completed</p>
 				</div>
 
 				

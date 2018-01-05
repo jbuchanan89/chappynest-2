@@ -96,7 +96,7 @@ function addAccount(user,cb){
 }
 
 function login(user,cb){
-  return fetch('http://localhost:3001/api/login', {
+  return fetch('${API_BASE_URL}/api/login', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
