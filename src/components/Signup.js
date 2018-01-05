@@ -5,7 +5,7 @@ class Signup extends React.Component {
 		state = {
 		users:[]
 	}
-	
+
 	constructor(props){
 		super(props);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -32,8 +32,10 @@ class Signup extends React.Component {
 		this.setState({users:users});
 		Client.addAccount(user, user => {
 			//
+
+			console.log(user);
 		});
-	}	
+	}
 	render(){
 		return(
 		<div>
@@ -43,7 +45,7 @@ class Signup extends React.Component {
 					<li> <a href="/">Home</a></li>
 				</ul>
 			</header>
-			
+
 			<div class="title">
 				<h2>Chappy Nest</h2>
 			</div>
