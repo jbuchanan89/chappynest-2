@@ -80,18 +80,21 @@ body {
 	text-align: center;
 	color: #000;
 	background-color: #061283;
+	padding-bottom: 50px;
 }
 
 .info h2 {
 	color: white;
-	font-size: 30px;
+	font-size: 25px;
 	text-transform: uppercase;
+	padding: 30px;
+	border-bottom: 2px solid #FFB74C;
 }
 
 .info .detail {
-	color: #FFB74C;
+	color: #062183;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 20px;
 	margin: 20px 16.67%;
 	padding: 30px;
 	background-color: white;
@@ -103,6 +106,7 @@ body {
 	text-align: center;
 	vertical-align: middle;
 }
+
 footer {
 	height: 50px;
 	background-color: #FFB74C;

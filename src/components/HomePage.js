@@ -44,6 +44,8 @@ class HomePage extends React.Component{
 			</div>
 
 		</div>
+
+		<footer></footer>
 	</div>
 			);
 	}
