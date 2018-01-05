@@ -29,7 +29,6 @@ class ParentDashboard extends React.Component{
 		});
 
 		this.addTask = this.addTask.bind(this);
-
 	}
 
 	logout(e){

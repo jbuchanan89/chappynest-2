@@ -39,9 +39,8 @@ class Login extends React.Component{
 					<li><a href="/signup">Signup</a></li>
 					<li> <a href="/">Home</a></li>
 				</ul>
-
-
 			</header>
+
 			<div className="title">
 				<h2>Chappy Nest</h2>
 			</div>
@@ -51,7 +50,6 @@ class Login extends React.Component{
 				<form onSubmit={this.handleSubmit.bind(this)}> 
         			<input ref={(input) => { this.usernameInput =input}} placeholder="Email" type="text" name="username1" className="username" required />
         			<input ref={(input) => { this.passwordInput =input}} placeholder="Password" type="password" className="password1" name="password" required/>
-
         			<button id="login" className="btn" type="submit" >Sign In</button>
         		</form>
         		
