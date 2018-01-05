@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "proxy": "process.env.REACT_APP_API_BASE_URL",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
