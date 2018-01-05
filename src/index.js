@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Route } from "react-router";
-// import { BrowserRouter, Redirect } from "react-router-dom";
 import { BrowserRouter, Redirect } from "react-browser-router";
 import App from "./App";
 

@@ -2,8 +2,6 @@ import React from "react";
 import Client from '../Client';
 import Header from './Header';
 
-
-
 class HomePage extends React.Component{
 
 	handleLogin(event) {
