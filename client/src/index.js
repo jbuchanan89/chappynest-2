@@ -18,7 +18,6 @@ import "./CSS/index.css";
 import "./CSS/profile.css";
 import "./CSS/responsive.css";
 
-
 class Root extends React.Component{
 	constructor(){
 		super();
@@ -95,7 +94,6 @@ class Root extends React.Component{
 				<Route exact path="/addchore" component={AddChore} />
 				<Route exact path="/create" component={AddUser} />
 				<Route exact path="/logout" component={Logout} />
-
 			</div>
 		</BrowserRouter>
 	  );

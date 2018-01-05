@@ -1,4 +1,6 @@
 /* eslint-disable no-undef */
+import {API_BASE_URL} from './config';
+
 function getChores(cb) {
   return fetch('api/chores/'+ localStorage.getItem('ChappyNest-userID'), {
     accept: "application/json"
@@ -7,7 +9,6 @@ function getChores(cb) {
     .then(parseJSON)
     .then(cb);
 }
-
 
 function getDailyTask(cb){
   return fetch('api/dailytask/'+ localStorage.getItem('ChappyNest-userID'), {
@@ -95,7 +96,7 @@ function addAccount(user,cb){
 }
 
 function login(user,cb){
-  return fetch('api/login', {
+  return fetch('http://localhost:3001/api/login', {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
