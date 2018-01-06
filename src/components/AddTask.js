@@ -3,6 +3,12 @@ import Client from '../Client';
 var moment = require('moment');
 
 class AddTask extends React.Component{
+	
+	constructor(props){
+		super(props);
+		this.handleSubmit = this.handleSubmit.bind(this);
+	}
+
 	handleSubmit(event) {
 		event.preventDefault();
 		let chore = this.choreInput.value.split("|");
@@ -18,7 +24,7 @@ class AddTask extends React.Component{
 		Client.addTask(dailyTask, dailyTask => {
 			alert('Daily Task Added');
 			this.props.addTask(dailyTask);
-			document.getElementById("AssignTask").reset();
+			//document.getElementById("AssignTask").reset();
 		});
 	}
 
