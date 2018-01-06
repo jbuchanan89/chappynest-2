@@ -96,7 +96,7 @@ function addAccount(user,cb){
 }
 
 function login(user,cb){
-  return fetch(`${API_BASE_URL}/api/login`, {
+  return fetch(`${API_BASE_URL}/login`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -127,4 +127,3 @@ function parseJSON(response) {
 
 const Client = { markTaskCompleted, parentDashboardGetTask, addTask, login, getChores, getDailyTask, addChore, getChildAccounts, addAccount };
 export default Client;
-

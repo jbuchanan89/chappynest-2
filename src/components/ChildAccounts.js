@@ -17,9 +17,9 @@ class ChildAccounts extends React.Component{
 		return(
 		<div className="profileKidBox col-5">
 			<p className="childName">{this.props.details.name}</p>
-			<img src="https://image.flaticon.com/icons/svg/163/163801.svg"/>
+			<img src="https://image.flaticon.com/icons/svg/163/163801.svg" alt=""/>
     		<p className="childUsername"><span className="label">Username:</span> {this.props.details.username} </p>
-		
+
     		<div className="row edit">
     			<p class="edit-delete"><i class="fa fa-pencil" aria-hidden="true"></i></p>
     			<p class="edit-delete"><i class="fa fa-trash" aria-hidden="true"></i></p>
@@ -41,4 +41,4 @@ class ChildAccounts extends React.Component{
 	}
 }
 
-export default ChildAccounts; 
+export default ChildAccounts;
