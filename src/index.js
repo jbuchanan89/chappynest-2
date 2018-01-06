@@ -45,19 +45,19 @@ class Root extends React.Component{
 			return (<Redirect to='/' />)
 		}
 
-		const myLoginPage = (props) => {
-			if(localStorage.getItem('ChappyNest-userID') !== ''){
-				return (<Redirect to={'/'+localStorage.getItem('ChappyNest-userType')+'dashboard'}/>)
-			} else {
-				return (
-					<Login loginUser={this.loginUser} {...props} />
-				)
-			}
-		}
+		// const myLoginPage = (props) => {
+		// 	if(localStorage.getItem('ChappyNest-userID') !== ''){
+		// 		return (<Redirect to={'/'+localStorage.getItem('ChappyNest-userType')+'dashboard'}/>)
+		// 	} else {
+		// 		return (
+		// 			<Login loginUser={this.loginUser} {...props} />
+		// 		)
+		// 	}
+		// }
 
 		const ParentDashboardPage = (props) => {
 			if(localStorage.getItem('ChappyNest-userID') !== '' && localStorage.getItem('ChappyNest-userType') === 'parent'){
-				return <ParentDashboard logout={this.logoutUser} {...props} />ChappyNest-userType
+				return <ParentDashboard logout={this.logoutUser} {...props} />
 			} else {
 				return (<Redirect to='/' />)
 			}
