@@ -46,7 +46,7 @@ class AddTask extends React.Component{
 		var day7 = moment().add(6, 'days').format('L');
 		
 		var dayOfWeek = [day1, day2, day3, day4, day5, day6, day7];
-		console.log(dayOfWeek);
+		// console.log(dayOfWeek);
 		return (
 		<div>
 			<div> 

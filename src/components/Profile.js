@@ -39,6 +39,7 @@ class Profile extends React.Component{
 		this.setState({users:users});
 		Client.addAccount(user, user => {
 			//
+			console.log(user);
 		});
 		// Client.addAccount()
 	}

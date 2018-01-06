@@ -1,9 +1,7 @@
 import React from 'react';
 
 class  ParentDashboardChildren extends React.Component{
-
 	render(){
-
 		let taskContent = this.props.tasks.map(function(task){
 			if(task.child_id === this.props.children._id){
 				return <li className={"completed-"+task.completed}>{task.name} - ({task.pointValue})</li>;
@@ -23,8 +21,6 @@ class  ParentDashboardChildren extends React.Component{
 				}
 			}
 		}
-
-
 
 		return(
 		<div className="kidBox col-5">
