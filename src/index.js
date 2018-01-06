@@ -57,7 +57,7 @@ class Root extends React.Component{
 
 		const ParentDashboardPage = (props) => {
 			if(localStorage.getItem('ChappyNest-userID') !== '' && localStorage.getItem('ChappyNest-userType') === 'parent'){
-				return <ParentDashboard logout={this.logoutUser} {...props} />
+				return <ParentDashboard logout={this.logoutUser} {...props} />ChappyNest-userType
 			} else {
 				return (<Redirect to='/' />)
 			}
@@ -86,7 +86,7 @@ class Root extends React.Component{
 				<Route exact path="/parentdashboard" component={ParentDashboardPage} />
 				<Route exact path="/childdashboard" component={ChildDashboardPage} />
 				<Route exact path="/account" component={ProfilePage} />
-				<Route exact path="/login" component={myLoginPage} />
+				<Route exact path="/login" component={Login} />
 				<Route exact path="/signup" component={Signup} />
 				<Route exact path="/addchore" component={AddChore} />
 				<Route exact path="/create" component={AddUser} />
