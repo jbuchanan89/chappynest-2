@@ -20,7 +20,7 @@ function getDailyTask(cb){
 }
 
 function parentDashboardGetTask(day,cb){
-  return fetch(`${API_BASE_URL}/parent_task/${localStorage.getItem('ChappyNest-userID')}/${day}`, {
+  return fetch(`${API_BASE_URL}/parent_task/${localStorage.getItem('ChappyNest-userID')/day}`, {
   })
   .then(checkStatus)
   .then(parseJSON)
@@ -43,7 +43,7 @@ function addTask(task,cb){
 }
 
 function markTaskCompleted(id,completed,cb){
-  return fetch(`${API_BASE_URL}/dailytask/${id}/${completed}`, {
+  return fetch(`${API_BASE_URL}/dailytask/id/completed`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
