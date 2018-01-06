@@ -20,7 +20,6 @@ class AddChore extends React.Component{
 			this.pointValueInput.value = "";
 			this.props.addChore(chore);
 		});
-
 	}
 	
 	render(){

@@ -10,8 +10,8 @@ class DailyList extends React.Component{
 		};
 		this.props.updateTask(task);
 		console.log(this.props.task._id);
-
 	}
+	
 	render(){
 		return(
 			<div>
