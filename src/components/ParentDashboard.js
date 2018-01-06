@@ -19,7 +19,7 @@ class ParentDashboard extends React.Component{
 		Client.getChildAccounts(data => {
 			this.setState({children:data});
 		});
-		Client.parentDashboardGetTask(moment().format("L"),data => {
+		Client.parentDashboardGetTask(moment().format("MMDDYYYY"),data => {
 		this.setState({tasks: data});
 		});
 		this.logout = this.logout.bind(this);
