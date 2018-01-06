@@ -31,7 +31,7 @@ class Signup extends React.Component {
 		users.push(user);
 		this.setState({users:users});
 		Client.addAccount(user, user => {
-			//
+			console.log(user);
 		});
 	}	
 	render(){
