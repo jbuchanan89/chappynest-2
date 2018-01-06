@@ -57,15 +57,8 @@ class Root extends React.Component{
 		// }
 
 		const myLoginPage = (props) => {
-			if(localStorage.getItem('ChappyNest-userID') === null || '' ){
 				return (
-					<Login loginUser={this.loginUser} {...props} />
-				)
-			}else {
-				return (
-					<Login loginUser={this.loginUser} {...props} />
-				)
-			}
+					<Login loginUser={this.loginUser} {...props} />)
 		}
 
 		const ParentDashboardPage = (props) => {
