@@ -61,11 +61,12 @@ class Root extends React.Component{
 				return (
 					<Login loginUser={this.loginUser} {...props} />
 				)
-			} else {
-				return (<Redirect to={'/'+localStorage.getItem('ChappyNest-userType')+'dashboard'}/>)
+			}else {
+				return (
+					<Login loginUser={this.loginUser} {...props} />
+				)
 			}
 		}
-
 
 		const ParentDashboardPage = (props) => {
 			if(localStorage.getItem('ChappyNest-userID') !== '' && localStorage.getItem('ChappyNest-userType') === 'parent'){
@@ -108,7 +109,6 @@ class Root extends React.Component{
 	  );
 	}
 }
-
 
 ReactDOM.render(
   <Root />,
