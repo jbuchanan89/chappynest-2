@@ -62,7 +62,7 @@ class ParentDashboard extends React.Component{
 								{
 						    		Object
 						    		.keys(this.state.children)
-						    		.map(key => <ParentDashboardChildren key={key} children={this.state.children[key]} tasks={this.state.tasks} />)
+						    		.map(key => <ParentDashboardChildren key={key} children={this.state.children[key]} tasks={this.state.tasks[key]} />)
 						    	}
 
 					  </div>

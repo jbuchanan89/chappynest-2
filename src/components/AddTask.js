@@ -24,7 +24,7 @@ class AddTask extends React.Component{
 		Client.addTask(dailyTask, dailyTask => {
 			alert('Daily Task Added');
 			this.props.addTask(dailyTask);
-			//document.getElementById("AssignTask").reset();
+			document.getElementById("AssignTask").reset();
 		});
 	}
 

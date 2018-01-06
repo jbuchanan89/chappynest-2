@@ -43,8 +43,6 @@ class Profile extends React.Component{
 		// Client.addAccount()
 	}
 
-
-
 	render(){
 		return(
 			<div>
