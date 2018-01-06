@@ -13,7 +13,7 @@ class HomePage extends React.Component{
 	render(){
 		return (
 	<div> 
-		<Header link1="Login" link2="SignUp" />
+		<Header link1="login" link2="SignUp" />
 
 		<div className="row">
 			<div id="summary" className= "summary col-12">
