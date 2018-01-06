@@ -34,7 +34,6 @@ class Root extends React.Component{
 
 	logoutUser(){
 		// this.setState({user: {}});
-		localStorage.setItem('ChappyNest-name','');
 		localStorage.setItem('ChappyNest-userID','');
 		localStorage.setItem('ChappyNest-userType','');
 		//cb();
@@ -44,7 +43,7 @@ class Root extends React.Component{
 		const Logout = (props) => {
 			this.logoutUser();
 			return (<Redirect to='/' />)
-	}
+		}
 
 		const myLoginPage = (props) => {
 			if(localStorage.getItem('ChappyNest-userID') !== ''){
@@ -57,7 +56,7 @@ class Root extends React.Component{
 		}
 
 		const ParentDashboardPage = (props) => {
-			if(localStorage.getItem('ChappyNest-userID') !== '' && localStorage.getItem('ChappyNest-userType') === 'parent') {
+			if(localStorage.getItem('ChappyNest-userID') !== '' && localStorage.getItem('ChappyNest-userType') === 'parent'){
 				return <ParentDashboard logout={this.logoutUser} {...props} />
 			} else {
 				return (<Redirect to='/' />)
@@ -97,7 +96,6 @@ class Root extends React.Component{
 	  );
 	}
 }
-
 
 
 ReactDOM.render(
