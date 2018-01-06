@@ -34,6 +34,7 @@ class Root extends React.Component{
 
 	logoutUser(){
 		// this.setState({user: {}});
+		localStorage.setItem('ChappyNest-name','');
 		localStorage.setItem('ChappyNest-userID','');
 		localStorage.setItem('ChappyNest-userType','');
 		//cb();
