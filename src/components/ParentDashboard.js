@@ -7,10 +7,10 @@ var moment= require('moment');
 
 class ParentDashboard extends React.Component{
 		state = {
-		chores:[],
-		children:[],
-		tasks:[],
-		user: {},
+			chores:[],
+			children:[],
+			tasks:[],
+			user: {},
 	}
 
 	constructor(props){
@@ -19,7 +19,7 @@ class ParentDashboard extends React.Component{
 		Client.getChildAccounts(data => {
 			this.setState({children:data});
 		});
-		Client.parentDashboardGetTask(moment().format("MM-DD-YYYY"),data => {
+		Client.parentDashboardGetTask(moment().format("L"),data => {
 		this.setState({tasks: data});
 		});
 		this.logout = this.logout.bind(this);

@@ -9,7 +9,6 @@ class HomePage extends React.Component{
 		Client.login();
 	}
 
-
 	render(){
 		return (
 	<div> 
