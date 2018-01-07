@@ -79,7 +79,7 @@ class ParentDashboard extends React.Component{
 		</div>
 			);
 	}
-}
+} 
 
 
 export default ParentDashboard;
