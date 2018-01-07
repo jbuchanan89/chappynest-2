@@ -21,7 +21,6 @@ function getDailyTask(cb){
 
 function parentDashboardGetTask(day,cb){
   return fetch(`${API_BASE_URL}/parent_task/${localStorage.getItem('ChappyNest-userID')}/${day}`, {
-      accept: "application/json"
   })
   .then(checkStatus)
   .then(parseJSON)
