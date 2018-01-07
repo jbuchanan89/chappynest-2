@@ -23,7 +23,7 @@ class HomePage extends React.Component{
 
 		<div className ="row">
 			<div className="col-12 info">
-				<h2>What does this site do? </h2>
+				<h2>What Can I Do With ChappyNest? </h2>
 
 				<div className="detail col-8">
 					<p>Add Household Chores</p>
