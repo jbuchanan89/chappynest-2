@@ -16,16 +16,12 @@ class ParentDashboard extends React.Component{
 	constructor(props){
 		super(props);
 		this.setState({user:localStorage.getItem('user')})
-
 		Client.getChildAccounts(data => {
 			this.setState({children:data});
 		});
-
-		let day = moment().format("MM-DD-YYYY");
-		Client.parentDashboardGetTask(day,data => {
+		Client.parentDashboardGetTask(moment().format("MM-DD-YYYY"),data => {
 		this.setState({tasks: data});
 		});
-
 		this.logout = this.logout.bind(this);
 
 		Client.getChores(data => {
@@ -33,6 +29,7 @@ class ParentDashboard extends React.Component{
 		});
 
 		this.addTask = this.addTask.bind(this);
+
 	}
 
 	logout(e){
@@ -79,7 +76,7 @@ class ParentDashboard extends React.Component{
 		</div>
 			);
 	}
-} 
+}
 
 
 export default ParentDashboard;
