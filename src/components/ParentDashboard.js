@@ -21,8 +21,7 @@ class ParentDashboard extends React.Component{
 			this.setState({children:data});
 		});
 
-		let date = moment().format("MM-DD-YYYY").replace("-","");
-		let day = date.replace("-","");
+		let day = moment().format("MM-DD-YYYY");
 		Client.parentDashboardGetTask(day,data => {
 		this.setState({tasks: data});
 		});
