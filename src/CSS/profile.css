@@ -238,8 +238,9 @@
 
 /*********CHILD DASHBOARD******/
 .childDashboard {
-	height: 500px;
+	height: 80vh;
 }
+
 .childDashboard h1 {
 	font-size: 40px;
 	color: #061283;
