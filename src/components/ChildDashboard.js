@@ -30,15 +30,13 @@ class ChildDashboard extends React.Component{
 		Client.markTaskCompleted(task.id,!task.completed, task => {
 			let dt = this.state.dailyTask;
 			dt.forEach(function(dailyTask,index){
-				if(task._id === dailyTask._id){
+				if(task.id === dailyTask._id){
 					dt[index].completed = !task.completed;
 				}
 			});
 			this.setState({dailyTask: dt});
 		});
 	}
-
-
 
 	render(){
 		var Date= moment().format("L");
