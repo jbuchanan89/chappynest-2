@@ -11,7 +11,7 @@ class ChildDashboard extends React.Component{
 
 	constructor(props){
 		super(props);
-		Client.getDailyTask(data => {
+		Client.getDailyTask(moment().format("MM-DD-YYYY"),data => {
 			this.setState({dailyTask:data});
 		});
 

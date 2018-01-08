@@ -10,8 +10,8 @@ function getChores(cb) {
     .then(cb);
 }
 
-function getDailyTask(cb){
-  return fetch(`${API_BASE_URL}/dailytask/${localStorage.getItem('ChappyNest-userID')}`, {
+function getDailyTask(day,cb){
+  return fetch(`${API_BASE_URL}/dailytask/${localStorage.getItem('ChappyNest-userID')}/${day}`, {
     accept: "application/json"
   })
   .then(checkStatus)
