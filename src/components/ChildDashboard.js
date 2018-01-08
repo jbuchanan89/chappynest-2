@@ -63,8 +63,8 @@ class ChildDashboard extends React.Component{
 				</div>
 			</main>
 
-			<footer>
-			</footer>
+			// <footer>
+			// </footer>
 		</div>
 		);
 	}
