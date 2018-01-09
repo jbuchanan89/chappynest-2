@@ -16,10 +16,9 @@ class HomePage extends React.Component{
 
 		<div className="row">
 			<div id="summary" className= "summary col-12">
-
 				<h1>Chappy Nest</h1>
-
 			</div>
+
 		</div>
 
 		<div className ="row">
