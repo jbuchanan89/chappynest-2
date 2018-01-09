@@ -27,8 +27,10 @@
 
 .nav a:link,
 .nav a:active,
-.nav a:visited {
+.nav a:visited,
+.nav a:hover {
 	color: #FD3C3C;
+	text-decoration: underline;
 
 }
 
@@ -118,7 +120,7 @@
 
 .addUser,
 .assignTask{
-	color:  #061283;
+	color:  #FD3C3C;
 }
 
 #addChores .addChoreField,
