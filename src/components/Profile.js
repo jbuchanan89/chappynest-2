@@ -47,7 +47,7 @@ class Profile extends React.Component{
 		return(
 			<div>
 				<div className="row sectionOne">	
-					<Header link1="Logout" link2="ParentDashboard" />
+					<Header link1="Logout" link1Name="Log Out" link2="ParentDashboard" link2Name="Parent Dashboard"/>
 				</div>
 
 			<div className="row section">
