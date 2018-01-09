@@ -38,6 +38,12 @@ body {
 	border-bottom: 5px solid #FFB74C;
 }
 
+.nsv-bar p {
+	margin: 0;
+	font-size: 20px;
+	color: #FFF;
+}
+
 .nav-bar ul{
 	list-style: none;
 	margin: 0;
