@@ -18,6 +18,7 @@ class HomePage extends React.Component{
 			<div id="summary" className= "summary col-12">
 
 				<h1>Chappy Nest</h1>
+
 			</div>
 		</div>
 

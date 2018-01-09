@@ -94,13 +94,12 @@ body {
 .info h2 {
 	color: white;
 	font-size: 25px;
-	text-transform: uppercase;
 	padding: 30px;
 	border-bottom: 2px solid #FFB74C;
 }
 
 .info .detail {
-	color: #062183;
+	color: #FD3C3C;
 	font-weight: bold;
 	font-size: 20px;
 	margin: 20px 16.67%;

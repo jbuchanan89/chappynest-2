@@ -38,10 +38,12 @@
 	  font-size: 30px;
 	}
 	
-	.nav li {
-	 	font-size: 20px;
+	.nav-bar ul li {
+		display: inline-block;
+		float: right;
+		margin:20px 50px;
+		font-size: 20px;
 	}
-
 	.assignTask,
 	.addUser {
 		max-width: 40%;
