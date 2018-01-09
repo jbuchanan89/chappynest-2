@@ -266,6 +266,7 @@
 
 .childChores {
 	text-align: center;
+	height: 300px;
 	width: 400px;
 	border: .5px solid #D3D3D3;
 	box-shadow: 5px 5px 5px 5px #D3D3D3;
@@ -281,10 +282,6 @@
 .childDashboard .chore {
 	display: inline-block;
 	padding-left: 20px;
-}
-
-.dailyList {
-	height: 300px;
 }
 
 .householdChores {

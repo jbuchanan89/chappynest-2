@@ -54,7 +54,7 @@ class ParentDashboard extends React.Component{
 		return (
 		<div> 
 			<div className="row">	
-				<Header link1="Logout" link1Name="Log Out" link2="Account" link2Name="Account"/>
+				<Header link1="Logout" link1Name="Logout" link2="Account" link2Name="Account"/>
 			</div>
 
 			<main className="row parentDashboard">
