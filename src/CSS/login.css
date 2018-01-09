@@ -4,7 +4,7 @@
   background-color: white;
   border-radius: 10px;
   position: absolute;
-  margin: 30px 0;
+  margin: 60px 0;
   padding: 20px;
   top: 50%;
   left: 50%;
@@ -36,7 +36,7 @@
   opacity: 0.4;
   font-size: 25px;
   color: #FD3C3C;
-  margin-top: 40px;
+  margin-top: 20px;
   -webkit-transition: border-color 1s ease-out;
   -moz-transition: border-color 1s ease-out;
   -o-transition: border-color 1s ease-out;
