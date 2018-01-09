@@ -47,7 +47,7 @@ class Root extends React.Component{
 
 		const myLoginPage = (props) => {
 			if(localStorage.getItem('ChappyNest-userID') !== ''){
-				return (<Redirect to={'/'+localStorage.getItem('ChappyNest-userType')+'dashboard'}/>)
+				return (<Login loginUser={this.loginUser} {...props}/>)
 			} else {
 				return (
 					<Login loginUser={this.loginUser} {...props} />
