@@ -49,7 +49,7 @@ class Login extends React.Component{
 			<div className="form" id="login">
 				<h1>LOGIN</h1>
 				<form onSubmit={this.handleSubmit.bind(this)}> 
-        			<input ref={(input) => { this.usernameInput =input}} placeholder="Email" type="text" name="username1" className="username" required />
+        			<input ref={(input) => { this.usernameInput =input}} placeholder="Username" type="text" name="username1" className="username" required />
         			<input ref={(input) => { this.passwordInput =input}} placeholder="Password" type="password" className="password1" name="password" required/>
         			<button id="login" className="btn" type="submit" >Sign In</button>
         		</form>
