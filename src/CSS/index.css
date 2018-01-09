@@ -59,6 +59,14 @@ body {
 	text-decoration: none;
 }
 
+.nav-bar p {
+	margin: 10px;
+	float: left;
+	color: #FFF;
+	font-family: 'Comfortaa', cursive;
+	font-size: 30px;
+}
+
 .summary h1 {
 	text-align: center;
 	margin: 200px auto;

@@ -1,5 +1,6 @@
 import React from 'react';
 import Client from '../Client';
+import Header from './Header'
 
 class Signup extends React.Component {
 		state = {
@@ -37,12 +38,9 @@ class Signup extends React.Component {
 	render(){
 		return(
 		<div>
-			<header className="nav-bar">
-				<ul>
-					<li><a href="/login">Log In</a></li>
-					<li> <a href="/">Home</a></li>
-				</ul>
-			</header>
+			<div className="row">	
+				<Header link1="login" link1Name="Login" link2="" link2Name="Home"/>
+			</div>
 
 			<div class="title">
 				<h2>Chappy Nest</h2>
