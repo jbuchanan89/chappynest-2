@@ -283,6 +283,10 @@
 	padding-left: 20px;
 }
 
+.dailyList {
+	height: 300px;
+}
+
 .householdChores {
 	width: 60%;
 	margin: 20px auto;
