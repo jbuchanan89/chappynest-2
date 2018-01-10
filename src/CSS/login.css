@@ -21,7 +21,7 @@
 }
 
 .title h2{
-  color: #FD3C3C;
+  color: #FFB74C;
   margin: 15px;
   font-size: 40px;
   text-align: center;
@@ -34,8 +34,8 @@
   border-color: lightgray;
   background-color: transparent;
   opacity: 0.4;
-  font-size: 25px;
-  color: #FD3C3C;
+  font-size: 20px;
+  color: black;
   margin-top: 20px;
   -webkit-transition: border-color 1s ease-out;
   -moz-transition: border-color 1s ease-out;
@@ -63,7 +63,7 @@
 .form a:visited
 .form a:hover
 {
-  color: #FD3C3C;
+  color: #FFB74C;
   text-decoration: none;
   font-weight: bold;
 }
@@ -107,7 +107,7 @@
 .form button {
   margin-top: 50px;
   width: 80%;
-  background-color: #FD3C3C;
+  background-color: #FFB74C;
   border: 0;
   border-radius: 10px;
   color: white;

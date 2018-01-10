@@ -44,8 +44,14 @@
 		margin:20px 30px;
 		font-size: 20px;
 	}
+
+	.nav-bar p {
+		margin: 10px 50px;
+	}
+
 	.assignTask,
-	.addUser {
+	.addUser,
+	.childChores {
 		max-width: 40%;
 		margin: 50px auto;
 	}
@@ -60,8 +66,7 @@
 	}
 
 	.householdChores h2 {
-	color: #061283;
-	font-size: 40px;
+		font-size: 40px;
 	}
 
 	.form{
@@ -71,11 +76,6 @@
 
 	.summary h1 {
 		font-size: 60px;
-	}
-
-	.nav-bar p {
-		font-size: 35px;
-		margin: 5px;
 	}
 
 }

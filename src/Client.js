@@ -43,7 +43,7 @@ function addTask(task,cb){
 }
 
 function markTaskCompleted(id,completed,cb){
-  return fetch(`${API_BASE_URL}/dailytask/id/completed`, {
+  return fetch(`${API_BASE_URL}/dailytask/${id}/${completed}`, {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'

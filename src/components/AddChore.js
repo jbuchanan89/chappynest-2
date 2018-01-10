@@ -27,12 +27,13 @@ class AddChore extends React.Component{
 			<div id= "addChores">
 				<div className="modal">
 					<h2> CREATE CHORE</h2>
-
 					<form id="AddChore" onSubmit={this.handleSubmit.bind(this)}>
 					 	<input className="addChoreField" type="text" ref={(input) => { this.nameInput =input}} placeholder="name" required/>
 					 	<input className="addChoreField" type="number" ref={(input) => { this.pointValueInput = input}} placeholder="points" required/>
 						<input className="submit-form" type="submit" value="Add Chore"/>
 					</form>
+
+
 				</div>
 			</div>
 			)

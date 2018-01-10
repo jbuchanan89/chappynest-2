@@ -1,8 +1,9 @@
 /******PROFILE -MY KIDS*/
 
- .myKids h2{
-	color: #FD3C3C;
-	text-align: left;
+ .myKids h2,
+ .householdChores h2{
+	color: #FFB74C;
+	text-align: center;
 	margin: 30px;
 	font-size: 25px;
 }
@@ -29,19 +30,28 @@
 .nav a:active,
 .nav a:visited,
 .nav a:hover {
-	color: #FD3C3C;
+	color: #FFB74C;
 	text-decoration: underline;
 
+}
+
+.dashboardKids.row {
+	text-align: center;
 }
 
 .kid .kidBox {
 	border: .5px solid #D3D3D3;
 	box-shadow: 5px 5px 5px 5px #D3D3D3;
 	text-align: center;
-	margin: 50px 4.17% 0 4.17%;
-	margin-top: 50px;
+	margin: 30px 4.17% 0 4.17%;
 	height: 300px;
 	position: relative;
+	float: none;
+	display: inline-block;
+}
+
+.kid.row{
+	text-align: center;
 }
 
 .profileKidBox{
@@ -50,6 +60,8 @@
 	text-align: center;
 	margin: 20px 4.17% 20px 4.17%;
 	position: relative;
+	float: none;
+	display: inline-block;
 }
 
 .point-box{
@@ -91,7 +103,6 @@
 .kidBox .task-content {
 	width: 100%;
 	list-style: none;
-	margin: 10px auto;
 	padding: 0;
 	text-align: center;
 }
@@ -105,7 +116,7 @@
 	text-align: right;
 	display: inline-block;
 	margin: 0 10px;
-	color: #FD3C3C;
+	color: #FFB74C;
 	font-size: 20px;
 	cursor: pointer;
 }
@@ -120,7 +131,7 @@
 
 .addUser,
 .assignTask{
-	color:  #FD3C3C;
+	color: #FFB74C;
 }
 
 #addChores .addChoreField,
@@ -190,10 +201,11 @@
 	color: #061283;
 	font-size: 30px;
 	margin: 30px;
+	text-align: center;
 }
 
 .parentDashboard h2 {
-	color: #FD3C3C;
+	color: #FFB74C;
 	text-align: center;
 	font-size: 20px;
 }
@@ -217,12 +229,25 @@
   width: 200px;
   border-color: lightgray;
   font-size: 16px;
-  color: #FD3C3C;
+  color: black;
   margin: 20px auto;
   padding: 5px;
   border-radius: 10px;
   text-transform: uppercase;
   display: block;
+}
+
+.create {
+  width: 200px;
+  font-size: 16px;
+  color: black;
+  margin: 5px;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #FFB74C;
+  color: #fff;
+  padding: 5px;
+  border: none;
 }
 
 .assignTask .submit-form,
@@ -246,14 +271,14 @@
 .childDashboard h1 {
 	font-size: 40px;
 	color: #061283;
-	margin: 30px;
+	text-align: center;
 }
 
 .childDashboard h2 {
-	color: #FD3C3C;
+	color: #FFB74C;
 	margin: 30px;
 	text-align: center;
-	font-size: 35px;
+	font-size: 30px;
 }
 
 .childDashboard h3 {
@@ -293,11 +318,8 @@
 	padding: 20px;
 }
 
-.householdChores h2 {
-	color: #061283;
-}
-
-.section {
+.section,
+.profileHeader  {
 	border-bottom: 1px solid #aaaaaa;
 	padding-bottom: 30px;
 }

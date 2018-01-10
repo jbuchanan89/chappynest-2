@@ -10,7 +10,7 @@ body {
 }
 
 .summary {
-    height: 80vh;
+    height: 300px;
     background-image:
     linear-gradient(
     rgba(255, 183, 76, 0.5),
@@ -60,7 +60,7 @@ body {
 }
 
 .nav-bar p {
-	margin: 10px;
+	margin: 10px 0px 10px 30px;
 	float: left;
 	color: #FFF;
 	font-family: 'Comfortaa', cursive;
@@ -69,7 +69,7 @@ body {
 
 .summary h1 {
 	text-align: center;
-	margin: 200px auto;
+	margin: 100px auto;
 	color: White;
 	font-size: 40px;
 }
@@ -106,7 +106,6 @@ body {
 	padding: 30px;
 	background-color: white;
 	box-shadow: 2px 2px 2px 2px #D3D3D3;
-	border-radius: 70%;
 }
 
 .detail p {

@@ -28,11 +28,16 @@ class Signup extends React.Component {
 	}
 
 	addUser(user){
-		let users = this.state.users;
-		users.push(user);
-		this.setState({users:users});
+		//let users = this.state.users;
+		//users.push(user);
+		//this.setState({users:users});
 		Client.addAccount(user, user => {
-			console.log(user);
+			//console.log(user);
+			let self = this;
+			this.props.loginUser(user,function(){
+				// self.props.history.push('/');
+				self.props.history.push('/'+user.type+'dashboard');
+			});
 		});
 	}
 	render(){

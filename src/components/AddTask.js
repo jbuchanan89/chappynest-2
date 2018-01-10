@@ -22,7 +22,6 @@ class AddTask extends React.Component{
 		};		
 
 		Client.addTask(dailyTask, dailyTask => {
-			alert('Daily Task Added');
 			this.props.addTask(dailyTask);
 			document.getElementById("AssignTask").reset();
 		});
@@ -59,7 +58,9 @@ class AddTask extends React.Component{
 							 Select Child
 							</option>
 							{Child}
-						</select>
+						</select> 
+
+
 						<select ref={(input) => { this.choreInput =input}}>
 							<option selected="selected">
 							 Select Task

@@ -53,9 +53,8 @@ class Profile extends React.Component{
 			<div className="row section">
 				<h1 class="profileHeader">Account Settings</h1>
 					<ul className="nav">
-						<a href="#addChores"><li>Create Household Chore</li></a>
-						<a href="#addUser"><li>Create Child Account</li></a>
-
+						<a href="#addChores"><input type="submit" className="create" value="Create Household Chore"/></a>
+						<a href="#addUser"><input type="submit" className="create" value="Create Child Account"/></a>
 					</ul>
 				<div className="myKids">
 					<h2>My Kids</h2>
