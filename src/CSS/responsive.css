@@ -1,5 +1,5 @@
 @media only screen and (min-width: 961px) {
-
+		
 	.info {
 		wdith: auto;
 		margin: 0 auto;
@@ -24,10 +24,10 @@
 	  	margin: 2.5%;
 	}
 
-	.kid .profileKidBox{
+/*	.kid .profileKidBox{
 	  	height: 120px;
 	}
-
+*/
 	.profileHeader,
 	.parentDashboard h1{
 	  	font-size: 40px;

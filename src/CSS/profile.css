@@ -39,7 +39,11 @@
 	text-align: center;
 }
 
-.kid .kidBox {
+.kid.row{
+	text-align: center;
+}
+
+.dashboardKids .kid .kidBox {
 	border: .5px solid #D3D3D3;
 	box-shadow: 5px 5px 5px 5px #D3D3D3;
 	text-align: center;
@@ -48,10 +52,8 @@
 	position: relative;
 	float: none;
 	display: inline-block;
-}
-
-.kid.row{
-	text-align: center;
+	width: 41.66%;
+	padding: 5px;
 }
 
 .profileKidBox{
@@ -154,6 +156,7 @@
 .completed-false {
 	color: red;
 }
+
 .dashboardKids {
 	margin: 5px;
 }
@@ -164,12 +167,6 @@
 
 .dashboardKids .childUsername {
 	display: none;
-}
-
-.dashboardKids .kid .kidBox {
-	width: 41.66%;
-	margin-left: 4.17%;
-	padding: 10px;
 }
 
 .dashboardKids .kid .kidBox i {
