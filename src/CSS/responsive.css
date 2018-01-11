@@ -1,6 +1,38 @@
 @media only screen and (min-width: 961px) {
-		
+	main {
+	  width: 100%;
+	  height: 800px;
+	/*  background-color: #a8d0e6;*/
+	}
+	
+	.header p {
+		font-size: 30px;
+	}
+
+	.section1 {
+	  width: 50%;
+	  margin: 0;
+	  height: 400px;
+	  float:left;
+	  text-align: center;
+	}
+
 	.info {
+	  width: 91.66%;
+	  height: 250px;
+	  margin: 20px 4.17% 0 4.17%;
+	}
+
+	.section2 {
+	  width: 50%;
+	  height: 400px;
+	  float: left;
+	  text-align: center;
+	  margin: 0;
+	  border: none;
+	}
+
+/*	.info {
 		wdith: auto;
 		margin: 0 auto;
 	}
@@ -12,7 +44,7 @@
 	.info .detail{
 		width: 25%;
 		margin: 4%;
-	}
+	}*/
 
 	.dashboardKids, 
 	.myKids{

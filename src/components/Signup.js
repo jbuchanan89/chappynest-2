@@ -3,9 +3,7 @@ import Client from '../Client';
 import Header from './Header'
 
 class Signup extends React.Component {
-		state = {
-		users:[]
-	}
+
 
 	constructor(props){
 		super(props);

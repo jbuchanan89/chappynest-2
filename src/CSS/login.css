@@ -16,7 +16,7 @@
 }
 
 .form h1{
-  color:#061283;
+  color:#215CA5;
   margin-top:30px;
 }
 
@@ -50,7 +50,7 @@
 .form input:focus {
   outline: 0;
   opacity: 1;
-  border-color: #061283;
+  border-color: #215CA5;
 }
 
 .form .link {

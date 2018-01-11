@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Maven Pro', sans-serif;
+	font-family: Century Gothic;
 }
 
 body {
@@ -22,10 +22,9 @@ body {
 }
 
 .nav-bar {
-	background-color: #061283;
+	background-color: #f76c6c;
 	margin: 0;
 	height: 70px;
-	border-bottom: 5px solid #FFB74C;
 }
 
 .nav-bar ul{
@@ -44,7 +43,7 @@ body {
 .nav-bar a:visited,
 .nav-bar a:hover,
 .nav-bar a:active {
-	color:  #FFB74C;
+	color:  #374785;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -57,59 +56,9 @@ body {
 	font-size: 25px;
 }
 
-.summary h1 {
-	text-align: center;
-	margin: 100px auto;
-	color: White;
-	font-size: 40px;
-}
-
-.summary {
-	margin: 0;
-}
-
-.summary-info {
-	text-align: center;
-	margin: 80px;
-	padding: 10px;
-}
-
-.info {
-	text-align: center;
-	color: #061283;
-	padding-bottom: 50px;
-}
-
-.summary-details{
-	border: 1px solid red;
-	height: 300px;
-	margin: 0;
-}
-.info h2 {
-	color: #062183;
-	font-size: 50px;
-	padding: 30px;
-	font-weight: normal;
-}
-
-.info .detail {
-	color: #FD3C3C;
-	font-size: 20px;
-	margin: 20px 16.67%;
-	padding: 30px;
-	background-color: white;
-	box-shadow: 2px 2px 2px 2px #D3D3D3;
-}
-
-.detail p {
-	text-align: center;
-	vertical-align: middle;
-	color: #FFB74C;
-}
-
 footer {
 	height: 50px;
-	background-color: #FFB74C;
+	background-color: #374785;
 }
 
 

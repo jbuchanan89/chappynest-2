@@ -7,15 +7,16 @@ import App from "./App";
 import ParentDashboard from "./components/ParentDashboard";
 import ChildDashboard from "./components/ChildDashboard";
 import Profile from "./components/Profile";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
 import AddChore from "./components/AddChore";
 import AddUser from "./components/AddUser";
+import NewHomePage from "./components/NewHomePage";
 
 import "./CSS/login.css";
 import "./CSS/index.css";
 import "./CSS/profile.css";
+import "./CSS/homepage.css";
 import "./CSS/responsive.css";
+
 
 class Root extends React.Component{
 	constructor(){
@@ -45,24 +46,10 @@ class Root extends React.Component{
 			return (<Redirect to='/' />)
 		}
 
-		const myLoginPage = (props) => {
-			if(localStorage.getItem('ChappyNest-userID') !== ''){
-				return (<Login loginUser={this.loginUser} {...props}/>)
-			} else {
-				return (
-					<Login loginUser={this.loginUser} {...props} />
+		const myHomePage = (props) => {
+			return (
+				<NewHomePage loginUser={this.loginUser} {...props} />
 				)
-			}
-		}
-
-		const mySignUpPage = (props) => {
-			if(localStorage.getItem('ChappyNest-userID') !== ''){
-				return (<Redirect to='/' />)
-			} else {
-				return (
-					<Signup loginUser={this.loginUser} {...props} />
-				)
-			}
 		}
 
 		const ParentDashboardPage = (props) => {
@@ -92,12 +79,10 @@ class Root extends React.Component{
 	  return(
 		<BrowserRouter>
 			<div>
-				<Route exact path="/" component={App} />
+				<Route exact path="/" component={myHomePage} />
 				<Route exact path="/parentdashboard" component={ParentDashboardPage} />
 				<Route exact path="/childdashboard" component={ChildDashboardPage} />
 				<Route exact path="/account" component={ProfilePage} />
-				<Route exact path="/login" component={myLoginPage} />
-				<Route exact path="/signup" component={mySignUpPage} />
 				<Route exact path="/addchore" component={AddChore} />
 				<Route exact path="/create" component={AddUser} />
 				<Route exact path="/logout" component={Logout} />
