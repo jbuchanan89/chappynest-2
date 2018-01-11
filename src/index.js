@@ -48,7 +48,7 @@ class Root extends React.Component{
 
 		const myHomePage = (props) => {
 			return (
-				<NewHomePage loginUser={this.loginUser} {...props} />
+				<App loginUser={this.loginUser} {...props} />
 				)
 		}
 
@@ -79,7 +79,7 @@ class Root extends React.Component{
 	  return(
 		<BrowserRouter>
 			<div>
-				<Route exact path="/" component={myHomePage} />
+				<Route exact path="/" component={App} />
 				<Route exact path="/parentdashboard" component={ParentDashboardPage} />
 				<Route exact path="/childdashboard" component={ChildDashboardPage} />
 				<Route exact path="/account" component={ProfilePage} />

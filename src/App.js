@@ -7,7 +7,7 @@ class App extends Component {
     
     return (
       <div className="App">
-      <NewHomePage />
+      <NewHomePage loginUser={this.loginUser} {...props}/>
       </div>
     );
   }
