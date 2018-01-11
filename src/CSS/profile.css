@@ -48,12 +48,12 @@
 	box-shadow: 5px 5px 5px 5px #D3D3D3;
 	text-align: center;
 	margin: 30px 4.17% 0 4.17%;
-	height: 300px;
-	position: relative;
+	min-height: 300px;
 	float: none;
 	display: inline-block;
 	width: 41.66%;
 	padding: 5px;
+	overflow-y: auto;
 }
 
 .profileKidBox{
