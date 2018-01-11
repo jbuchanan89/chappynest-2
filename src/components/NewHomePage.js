@@ -1,6 +1,5 @@
 import React from "react";
 import Client from '../Client';
-import Header from './Header';
 
 class NewHomePage extends React.Component{
 		constructor(props){
@@ -99,6 +98,7 @@ class NewHomePage extends React.Component{
 				    </section>
 				    
 				    <section className="section2">
+				    	<section className="sign-up">
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign Up</h2>
 								<form id="AddUser" onSubmit={this.handleSubmit.bind(this)}>
 									<input type="text" ref={(input) => { this.nameInput =input}} placeholder="name"/>
@@ -108,9 +108,9 @@ class NewHomePage extends React.Component{
 								</form>
 
 				      			<p>Already have an account? <a href="/login">Login</a></p>
-				      </section>
+				      	</section>
 
-				      <section className="section2">
+				     	<section className="login">
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign In</h2>
 								<form id="Login" onSubmit={this.handleLogin.bind(this)}>
         							<input ref={(input) => { this.usernameInput =input}} placeholder="Username" type="text" name="username1" className="username" required />
@@ -119,7 +119,8 @@ class NewHomePage extends React.Component{
 								</form>
 
 				      			<p>Dont have an account? <a href="#Login">Login</a></p>
-				    </section>
+				    	</section>
+				</section>
 				    
 				</main>
 			</div>
