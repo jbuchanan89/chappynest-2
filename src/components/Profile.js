@@ -51,7 +51,7 @@ class Profile extends React.Component{
 				</div>
 
 				{
-					(this.state.users.length == 0)
+					(this.state.users.length === 0)
 				
 					?	<div className="message">
 							<h4>You Currently Do Not have any children assigned to your account</h4>	

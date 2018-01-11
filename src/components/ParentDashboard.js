@@ -57,7 +57,7 @@ class ParentDashboard extends React.Component{
 						<Header link1="logout" link1Name="Logout" link2="account" link2Name="Account"/>
 					</div>
 			{
-				(this.state.children.length == 0 )
+				(this.state.children.length === 0 )
 				? 
 				<div className="message">
 					<h4>You Currently Do Not have any children assigned to your account</h4>
