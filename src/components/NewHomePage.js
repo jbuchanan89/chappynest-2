@@ -7,7 +7,6 @@ class NewHomePage extends React.Component{
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
-
 	handleSubmit(event) {
 		event.preventDefault();
 		let user = {
@@ -79,19 +78,19 @@ class NewHomePage extends React.Component{
 				      	<div className="info">
 				        	<h4>For Parents:</h4>
 				          		<ul>
-						            <li>Add Children Accounts</li>
-						            <li>Add Household Chores</li>
-						            <li>Assign points for each chore completed</li>
-						            <li>Assign Daily Task for each child</li>
+						            <li><i class="fa fa-check" aria-hidden="true"></i> Add Children Accounts</li>
+						            <li><i class="fa fa-check" aria-hidden="true"></i> Add Household Chores</li>
+						            <li><i class="fa fa-check" aria-hidden="true"></i> Assign points for each chore completed</li>
+						            <li><i class="fa fa-check" aria-hidden="true"></i> Assign Daily Task for each child</li>
 				        		</ul>
 				      	</div>
 				      
 				       <div className="info">
 				         	<h4>For Kids:</h4>
 				           		<ul>
-				            		<li>See task for the day</li>
-				            		<li>Let your parents know when task are completed</li>
-				             		<li>Earn points by the day!</li>
+				            		<li><i class="fa fa-check" aria-hidden="true"></i> See task for the day</li>
+				            		<li><i class="fa fa-check" aria-hidden="true"></i> Let your parents know when task are completed</li>
+				             		<li><i class="fa fa-check" aria-hidden="true"></i> Earn points by the day!</li>
 				          		</ul>
 				      	</div>
 				      

@@ -85,9 +85,13 @@ h4 {
 .info ul {
   font-weight: normal;
   color: #f76c6c;
-  list-style-type: circle;
+  list-style:none;
   font-size: 20px;
+  text-align: left;
+}
 
+.info li {
+  margin-top: 5px;
 }
 
 form {
