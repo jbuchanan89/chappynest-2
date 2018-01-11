@@ -32,6 +32,7 @@ class NewHomePage extends React.Component{
 			this.props.loginUser(user,function(){
 				// self.props.history.push('/');
 				self.props.history.push('/'+user.type+'dashboard');
+
 			});
 		});
 	}
@@ -67,7 +68,7 @@ class NewHomePage extends React.Component{
 				  	</div>
 				  
 				  	<div className="header2">
-				    	<img src={require("../Images/house.svg")}/>
+				    	<img src={require("../Images/house.svg")} alt="house icon"/>
 					</div>
 				</div>
 				  

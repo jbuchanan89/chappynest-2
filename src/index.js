@@ -9,7 +9,7 @@ import ChildDashboard from "./components/ChildDashboard";
 import Profile from "./components/Profile";
 import AddChore from "./components/AddChore";
 import AddUser from "./components/AddUser";
-import NewHomePage from "./components/NewHomePage";
+//import NewHomePage from "./components/NewHomePage";
 
 import "./CSS/login.css";
 import "./CSS/index.css";
