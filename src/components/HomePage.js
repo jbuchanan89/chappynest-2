@@ -23,26 +23,16 @@ class HomePage extends React.Component{
 
 		<div className ="row">
 			<div className="col-12 info">
-				<h2>What Can I Do With ChappyNest? </h2>
+				<h2>How does it work?</h2>	
+			</div>
 
-				<div className="detail col-8">
-					<p>Add Household Chores</p>
-				</div>
+			<div className="row">
+				<div className="summary-details col-6"></div>
 
-				<div className="detail col-8">
-					<p>Assign Chores to Children</p>
-				</div>
-
-				<div className="detail col-8">
-					<p>Mark Chores Completed</p>
-				</div>
-
-				
+			<div className="summary-details col-6"></div>
 			</div>
 
 		</div>
-
-		<footer></footer>
 	</div>
 			);
 	}

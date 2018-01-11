@@ -86,20 +86,24 @@ body {
 
 .info {
 	text-align: center;
-	color: #000;
-	background-color: #061283;
+	color: #061283;
 	padding-bottom: 50px;
 }
 
+.summary-details{
+	border: 1px solid red;
+	height: 300px;
+	margin: 0;
+}
 .info h2 {
-	color: white;
-	font-size: 25px;
+	color: #062183;
+	font-size: 50px;
 	padding: 30px;
+	font-weight: normal;
 }
 
 .info .detail {
 	color: #FD3C3C;
-	font-weight: bold;
 	font-size: 20px;
 	margin: 20px 16.67%;
 	padding: 30px;
@@ -110,6 +114,7 @@ body {
 .detail p {
 	text-align: center;
 	vertical-align: middle;
+	color: #FFB74C;
 }
 
 footer {

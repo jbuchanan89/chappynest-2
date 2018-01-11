@@ -50,26 +50,33 @@ class Profile extends React.Component{
 					<Header link1="logout" link1Name="Logout" link2="parentdashboard" link2Name="Dashboard"/>
 				</div>
 
-			<div className="row section">
-				<h1 class="profileHeader">Account Settings</h1>
-					<ul className="nav">
-						<a href="#addChores"><input type="submit" className="create" value="Create Household Chore"/></a>
-						<a href="#addUser"><input type="submit" className="create" value="Create Child Account"/></a>
-					</ul>
-				<div className="myKids">
-					<h2>My Kids</h2>
-						<div className="kid row">
-							{
-					    		Object
-					    		.keys(this.state.users)
-					    		.map(key => <ChildAccounts key={key} details={this.state.users[key]} />)
-					    	}
+				{
+					(this.state.users.length == 0)
+				
+					?	<div className="message">
+							<h4>You Currently Do Not have any children assigned to your account</h4>	
 						</div>
 
-						
-				</div>
-			</div>
-				
+					: 	<div className="row section">
+							<h1 class="profileHeader">Account Settings</h1>
+							<ul className="nav">
+								<a href="#addChores"><input type="submit" className="create" value="Create Household Chore"/></a>
+								<a href="#addUser"><input type="submit" className="create" value="Create Child Account"/></a>
+							</ul>
+
+							<div className="myKids">
+								<h2>My Kids</h2>
+									<div className="kid row">
+										{
+								    		Object
+								    		.keys(this.state.users)
+								    		.map(key => <ChildAccounts key={key} details={this.state.users[key]} />)
+								    	}
+									</div>			
+							</div>
+						</div>		
+
+				}
 
 				<div className="householdChores">
 					<h2>Household Chores</h2>

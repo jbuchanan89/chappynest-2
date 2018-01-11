@@ -142,7 +142,8 @@
 	margin: 15px auto;
 	font-size: 20px;
 	width: 300px;
-	border-radius: 10px;
+	border: none;
+	border-bottom: 1px solid #D3D3D3;
 	padding: 5px;
 }
 
@@ -207,6 +208,17 @@
 	font-size: 20px;
 }
 
+.message{
+	text-align: center;
+	height: 200px;
+}
+
+.message h4 {
+	color: #061283;
+	margin-top: 200px;
+	font-size: 20px;
+}
+
 .parentDashboard .pointValue {
 	display: none;
 }
@@ -232,6 +244,16 @@
   border-radius: 10px;
   text-transform: uppercase;
   display: block;
+}
+
+.assignTask a:link,
+.assignTask a:visited,
+.assignTask a:hover,
+.assignTask a:active{
+	color: #FFB74C;
+	text-decoration: none;
+	margin: 2px;
+	font-size: 18px;
 }
 
 .create {
@@ -335,7 +357,7 @@
 }
 
 .householdChores table {
-    font-family: arial, sans-serif;
+/*    font-family: arial, sans-serif;*/
     border-collapse: collapse;
     width: 100%;
 }
@@ -349,15 +371,7 @@ td {
 .householdChores table tr th{
 		font-size: 20px;
 }
-/*.choreList th {
-	border: 1px solid #dddddd;
-	test-align: center;
-	font-size: 20px;
-	padding: 10px;
-	color: #FD3C3C;
-	font-weight: bold;
-}
-*/
+
 tr:nth-child(even) {
     background-color: #dddddd;
 }

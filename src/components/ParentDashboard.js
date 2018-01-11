@@ -53,28 +53,37 @@ class ParentDashboard extends React.Component{
 		var Day = moment().format('dddd'); 
 		return (
 		<div> 
-			<div className="row">	
-				<Header link1="logout" link1Name="Logout" link2="account" link2Name="Account"/>
-			</div>
-
-			<main className="row parentDashboard">
-				<h1>Parent Dashboard</h1>
-				<h2>{Day}, {Date}</h2>
-					<div className="dashboardKids row">
-					  <div className="kid">
-								{
-						    		Object
-						    		.keys(this.state.children)
-						    		.map(key => <ParentDashboardChildren key={key} children={this.state.children[key]} tasks={this.state.tasks} />)
-						    	}
-
-					  </div>
+					<div className="row">	
+						<Header link1="logout" link1Name="Logout" link2="account" link2Name="Account"/>
 					</div>
-			</main>
+			{
+				(this.state.children.length == 0 )
+				? 
+				<div className="message">
+					<h4>You Currently Do Not have any children assigned to your account</h4>
+				</div>
 
-			<AddTask addTask={this.addTask} task={this.state.tasks} chores={this.state.chores} children={this.state.children}/>
-			<footer>
-			</footer>
+				: <div> 
+					<main className="row parentDashboard">
+						<h1>Parent Dashboard</h1>
+						<h2>{Day}, {Date}</h2>
+							<div className="dashboardKids row">
+							  <div className="kid">
+										{
+								    		Object
+								    		.keys(this.state.children)
+								    		.map(key => <ParentDashboardChildren key={key} children={this.state.children[key]} tasks={this.state.tasks} />)
+								    	}
+
+							  </div>
+							</div>
+					</main>
+					<AddTask addTask={this.addTask} task={this.state.tasks} chores={this.state.chores} children={this.state.children}/>
+
+				</div>
+			}
+			
+			<footer></footer>
 		</div>
 			);
 	}

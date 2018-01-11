@@ -59,7 +59,7 @@ class AddTask extends React.Component{
 							</option>
 							{Child}
 						</select> 
-
+						<a href="account#addUser"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Child</a>
 
 						<select ref={(input) => { this.choreInput =input}}>
 							<option selected="selected">
@@ -67,6 +67,8 @@ class AddTask extends React.Component{
 							</option>
 							{Chore}
 						</select>
+						<a href="/account#addChores"><i class="fa fa-plus-square" aria-hidden="true"> </i> Add Chore</a>
+
 						<select ref={(input) => { this.dateInput =input}}>
 						  	<option selected="selected">
 							 Select Date
