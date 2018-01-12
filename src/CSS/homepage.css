@@ -22,7 +22,7 @@
 }
 
 .header2 img {
-  width: 200px;
+  width: 100px;
 }
 
 .header1 p {
@@ -33,15 +33,15 @@
 }
 
 .header2 {
-  height: 100px;
+  height: 200px;
   width: 40%;
   margin-top: 20px;
   float: left;
+  padding-right: 60px;
 }
 
 main {
   width: 100%;
-/*  background-color: #a8d0e6;*/
 }
 
 .section1 {
