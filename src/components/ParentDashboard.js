@@ -62,6 +62,7 @@ class ParentDashboard extends React.Component{
 				<div className="message">
 					<h4>You Currently Do Not have any children assigned to your account</h4>
 					<p>Head over to the Account Page to add children</p>
+					<a href="/account"><input type="submit" className="btn" value="Account Page"/></a>
 				</div>
 
 				: <div> 

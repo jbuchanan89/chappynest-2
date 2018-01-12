@@ -53,8 +53,21 @@ class Profile extends React.Component{
 				{
 					(this.state.users.length === 0)
 				
-					?	<div className="message">
-							<h4>You Currently Do Not have any children assigned to your account</h4>	
+					? 	<div>
+
+							<div className="account-message">
+								<p>Let's get started by setting up your Account!</p>
+								<p>Create some Household Chores that you always assign to your kids</p>
+								<p>Then create your child accounts. You can assign a username and a password for them. </p>
+								<p> Once you add your childrens accounts you will be able to see all the chores for your household and the accounts listed</p>
+							</div>
+							<div id="addChores"className="row addChoreInput assignTask">
+								<AddChore addChore={this.addChore} />
+							</div>
+
+							<div id="addUser"className="addUser">
+								 <AddUser addUser={this.addUser} />
+							</div>
 						</div>
 
 					: 	<div className="row section">
@@ -74,34 +87,32 @@ class Profile extends React.Component{
 								    	}
 									</div>			
 							</div>
-						</div>		
 
+
+							<div className="householdChores">
+								<h2>Household Chores</h2>
+
+								<table>
+									<tr>
+										<th>Chore</th>
+										<th>Points</th>
+									</tr>
+							    	{
+							    		Object
+							    		.keys(this.state.chores)
+							    		.map(key => <Chore key={key} details={this.state.chores[key]} />)
+							    	}
+								</table>
+							</div>
+							<div id="addChores"className="row addChoreInput assignTask">
+								<AddChore addChore={this.addChore} />
+							</div>
+
+							<div id="addUser"className="addUser">
+								 <AddUser addUser={this.addUser} />
+							</div>
+						</div>	
 				}
-
-				<div className="householdChores">
-					<h2>Household Chores</h2>
-
-					<table>
-						<tr>
-							<th>Chore</th>
-							<th>Points</th>
-						</tr>
-				    	{
-				    		Object
-				    		.keys(this.state.chores)
-				    		.map(key => <Chore key={key} details={this.state.chores[key]} />)
-				    	}
-					</table>
-				</div>
-				    
-			<div id="addChores"className="row addChoreInput assignTask">
-				<AddChore addChore={this.addChore} />
-			</div>
-
-			<div id="addUser"className="addUser">
-				 <AddUser addUser={this.addUser} />
-			</div>
-
 	</div>
 			)
 	}

@@ -52,7 +52,6 @@ class NewHomePage extends React.Component{
 				this.props.loginUser(user,function(){
 					// self.props.history.push('/');
 					self.props.history.push('/'+user.type+'dashboard');
-					console.log(user);
 				});
 			}
 		});
@@ -137,6 +136,13 @@ class NewHomePage extends React.Component{
 
 				      			<p>Dont have an account? <span className="link" onClick={this.handleSignUpLink.bind(this)}>Sign Up</span></p>
 				    	</section>
+						<ul>
+							<li><img src={require("../Images/bucket.svg")} alt="house icon"/></li>
+							<li><img src={require("../Images/homework.svg")} alt="house icon"/></li>
+							<li><img src={require("../Images/vacuum-cleaner.svg")} alt="house icon"/></li>
+							<li><img src={require("../Images/wiping-swipe-for-floors.svg")} alt="house icon"/></li>
+						</ul>
+
 				</section>
 				    
 				</main>

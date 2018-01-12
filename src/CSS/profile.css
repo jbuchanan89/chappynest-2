@@ -222,6 +222,13 @@
 	font-size: 20px;
 }
 
+.account-message {
+	text-align: center;
+	font-size: 20px;
+	height: 200px;
+	margin-top: 60px;
+}
+
 .parentDashboard .pointValue {
 	display: none;
 }
@@ -235,15 +242,13 @@
  	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.assignTask .submit-form,.btn,
-.addUser .submit-form,
- {
+.assignTask .submit-form,
+.addUser .submit-form{
   width: 300px;
   border-color: lightgray;
   font-size: 16px;
-  color: black;
   margin: 20px auto;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   text-transform: uppercase;
   display: block;;
@@ -289,9 +294,14 @@
 	font-size: 20px;
 }
 
+.message {
+	text-align: center;
+	height: 60vh;
+}
 
-
-
+.message h4 {
+	text-align: center;
+}
 
 /*********CHILD DASHBOARD******/
 .childDashboard {

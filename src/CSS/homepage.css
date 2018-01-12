@@ -83,6 +83,20 @@ main {
   margin-top: 30px;
 }
 
+.section2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section2 li{
+  display: inline-block;
+  margin: 5px;
+}
+
+.section2 li img{
+  width: 50px;
+}
+
 h4 {
   color: #24305e;
   font-size: 30px;
@@ -98,7 +112,7 @@ h4 {
 }
 
 .info li {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 form {
@@ -113,13 +127,26 @@ form {
   border-bottom: 1px solid #d4d4d4;
   width: 350px;
   font-size: 18px;
-  height: 30px;
-  padding: 5px;
+  height: 40px;
+  padding: 15px;
   color: #374785;
 }
 
-.btn {
+#sign-up .bt#f76c6cn,
+#login .btn {
+  background-color: #f76c6c;
+  color: white;
+  font-weight: bold;
+  border: none;
   width: 400px;
+  height: 50px;
+  font-size: 20px;
+}
+
+a:hover,
+a:link,
+a:visited {
+  text-decoration: none;
 }
 
 #login {
@@ -129,8 +156,8 @@ form {
 .link {
   color: #f76c6c;
   text-decoration: underline;
-  font-weight: bold;
 }
+
 .link:hover{
   cursor: pointer;
 }
