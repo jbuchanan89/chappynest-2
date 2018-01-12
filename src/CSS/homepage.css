@@ -49,6 +49,7 @@ main {
   margin: 4.17%;
   float:left;
   text-align: center;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .info {
@@ -64,11 +65,10 @@ main {
 
 .section2 {
   width: 91.66%;
-  height: 400px;
   float: left;
   text-align: center;
-  margin: 20px 4.17%;
-  border: 1px solid #d4d4d4;
+  margin: 0 4.17%;
+  border-bottom: 1px solid #d4d4d4;
 }
 
 .section2 h2 {
@@ -103,9 +103,22 @@ form input {
   margin: 30px auto;
   border: none;
   border-bottom: 1px solid #d4d4d4;
-  width: 200px;
+  width: 3dfsdfs00px;
   font-size: 18px;
   height: 30px;
   padding: 5px;
   color: #374785;
+}
+
+#login {
+  display: none;
+}
+
+.link {
+  color: #f76c6c;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.link:hover{
+  cursor: pointer;
 }

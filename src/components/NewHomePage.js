@@ -57,6 +57,22 @@ class NewHomePage extends React.Component{
 		});
 	}
 
+	handleLoginLink(event) {
+		event.preventDefault();
+		var loginDiv = document.getElementById("login");
+		var signUpDiv = document.getElementById("sign-up");
+		signUpDiv.style.display = "none";
+		loginDiv.style.display = "block";
+	}
+
+	handleSignUpLink(event) {
+		event.preventDefault();
+		var signUpDiv = document.getElementById("sign-up");
+		var loginDiv = document.getElementById("login");
+		loginDiv.style.display = "none";
+		signUpDiv.style.display = "block";		
+	}
+
 	render(){
 		return (
 			<div> 
@@ -98,27 +114,27 @@ class NewHomePage extends React.Component{
 				    </section>
 				    
 				    <section className="section2">
-				    	<section className="sign-up">
+				    	<section id="sign-up">
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign Up</h2>
 								<form id="AddUser" onSubmit={this.handleSubmit.bind(this)}>
 									<input type="text" ref={(input) => { this.nameInput =input}} placeholder="name"/>
 								 	<input type="text" ref={(input) => { this.usernameInput =input}} placeholder="username"/>
 								 	<input type="password" ref={(input) => { this.passwordInput = input}} placeholder="password"/>
-									<button className="submit-form" type="submit" value="Add User">Sign Up!</button>
+									<input className="btn" type="submit" value="Add User" name="Sign up!"/>
 								</form>
 
-				      			<p>Already have an account? <a href="/login">Login</a></p>
+				      			<p>Already have an account? <span className="link" onClick={this.handleLoginLink}>Login</span></p>
 				      	</section>
 
-				     	<section className="login">
+				     	<section id="login">
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign In</h2>
 								<form id="Login" onSubmit={this.handleLogin.bind(this)}>
         							<input ref={(input) => { this.usernameInput =input}} placeholder="Username" type="text" name="username1" className="username" required />
         							<input ref={(input) => { this.passwordInput =input}} placeholder="Password" type="password" className="password1" name="password" required/>
-        							<button id="login" className="btn" type="submit" >Sign In</button>
+        							<input className="btn" type="submit" name="Login" />
 								</form>
 
-				      			<p>Dont have an account? <a href="#Login">Login</a></p>
+				      			<p>Dont have an account? <span className="link" onClick={this.handleSignUpLink.bind(this)}>Sign Up</span></p>
 				    	</section>
 				</section>
 				    

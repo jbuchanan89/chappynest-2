@@ -12,9 +12,9 @@
 	.section1 {
 	  width: 50%;
 	  margin: 0;
-	  height: 400px;
 	  float:left;
 	  text-align: center;
+	  border: none;
 	}
 
 	.info {
