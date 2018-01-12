@@ -20,6 +20,10 @@
 	  border: none;
 	}
 
+	.section1 h3{
+		font-size: 60px;
+	}
+
 	.info {
 	  width: 91.66%;
 	  height: 250px;
@@ -125,6 +129,16 @@
 	border: none;
 	border-bottom: 1px solid #D3D3D3;
 	padding: 5px;
+}
+
+.account-message {
+	margin: 60px auto;
+}
+
+.account-message p {
+	width: 60%;
+	margin: 0 auto;
+
 }
 
 }
