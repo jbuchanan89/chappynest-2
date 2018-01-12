@@ -57,6 +57,7 @@ main {
 .info {
   width: 100%;
   margin-top: 20px;
+  padding-left: 100px;
 }
 
 .section1 h3 {
@@ -129,10 +130,9 @@ form {
   font-size: 18px;
   height: 40px;
   padding: 15px;
-  color: #374785;
 }
 
-#sign-up .bt#f76c6cn,
+#sign-up .btn,
 #login .btn {
   background-color: #f76c6c;
   color: white;
