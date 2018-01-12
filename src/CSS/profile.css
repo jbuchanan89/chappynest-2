@@ -2,7 +2,7 @@
 
  .myKids h2,
  .householdChores h2{
-	color: #FFB74C;
+	color: #215CA5;
 	text-align: center;
 	margin: 30px;
 	font-size: 25px;
@@ -30,7 +30,7 @@
 .nav a:active,
 .nav a:visited,
 .nav a:hover {
-	color: #FFB74C;
+	color: #f76c6c;
 	text-decoration: underline;
 
 }
@@ -235,11 +235,10 @@
  	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.assignTask select, 
 .assignTask .submit-form,.btn,
 .addUser .submit-form,
  {
-  width: 200px;
+  width: 300px;
   border-color: lightgray;
   font-size: 16px;
   color: black;
@@ -247,14 +246,21 @@
   padding: 5px;
   border-radius: 10px;
   text-transform: uppercase;
-  display: block;
+  display: block;;
+}
+
+.assignTask select {
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+	font-size: 20px;
 }
 
 .assignTask a:link,
 .assignTask a:visited,
 .assignTask a:hover,
 .assignTask a:active{
-	color: #FFB74C;
+	color: #f76c6c;
 	text-decoration: none;
 	margin: 2px;
 	font-size: 18px;
@@ -279,7 +285,8 @@
 	color: white;
 	font-weight: bold;
 	border: none;
-	width: 200px;
+	width: 300px;
+	font-size: 20px;
 }
 
 
@@ -353,7 +360,7 @@
 	margin: 10px auto;
 	font-size: 16px;
 	background-color: #24305e;
-	color: #FFB74C;
+	color: #f76c6c;
 	border-radius: 25px;
 	padding: 15px;
 	text-transform: uppercase;
