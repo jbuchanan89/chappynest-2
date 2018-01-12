@@ -21,8 +21,8 @@ class ChildAccounts extends React.Component{
     		<p className="childUsername"><span className="label">Username:</span> {this.props.details.username} </p>
 
     		<div className="row edit">
-    			<p class="edit-delete"><i class="fa fa-pencil" aria-hidden="true"></i></p>
-    			<p class="edit-delete"><i class="fa fa-trash" aria-hidden="true"></i></p>
+    			<p className="edit-delete"><i className="fa fa-pencil" aria-hidden="true"></i></p>
+    			<p className="edit-delete"><i className="fa fa-trash" aria-hidden="true"></i></p>
     		</div>
 
     		<div className="row choreList">

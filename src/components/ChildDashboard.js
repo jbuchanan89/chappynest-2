@@ -40,28 +40,44 @@ class ChildDashboard extends React.Component{
 
 	render(){
 		var Date= moment().format("LL");
-
+		var childName=localStorage.getItem('ChappyNest-name');
 		return (
 		<div>
 			<div className="row">	
 		<Header link1="logout" link1Name="Logout"/>
-			</div>
+			
+			{
+				(this.state.dailyTask.length === 0)
 
-			<main className="row childDashboard">
-				<h1>Child Dashboard</h1>
-				<h2>{Date}</h2>
-				<div className="childChores">
-					<h3>Chores Today</h3>
-						<div className="dailyList">
-	    					{
-						    		Object
-						    		.keys(this.state.dailyTask)
-						    		.map(key => <DailyList key={key} task={this.state.dailyTask[key]} tasks={this.state.dailyTask} updateTask={this.updateTask}/>)
-						   	}
-
+				? 	<main className="row childDashboard">
+						<h1>{childName}'s Dashboard</h1>
+						<h2>{Date}</h2>
+						<div className="childChores">
+							<h3>Chores Today</h3>
+								<div className="dailyList">
+									<p> No Chores Assigned today!</p>
+								</div>
 						</div>
-				</div>
-			</main>
+					</main>
+
+				: <main className="row childDashboard">
+						<h1>{childName}'s Dashboard</h1>
+						<h2>{Date}</h2>
+						<div className="childChores">
+							<h3>Chores Today</h3>
+								<div className="dailyList">
+			    					{
+								    		Object
+								    		.keys(this.state.dailyTask)
+								    		.map(key => <DailyList key={key} task={this.state.dailyTask[key]} tasks={this.state.dailyTask} updateTask={this.updateTask}/>)
+								   	}
+
+								</div>
+						</div>
+					</main>
+			}
+
+			</div>
 
 			<footer>
 			</footer>

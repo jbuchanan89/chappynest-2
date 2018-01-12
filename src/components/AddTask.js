@@ -30,11 +30,11 @@ class AddTask extends React.Component{
 	render(){
 		const Child= this.props.children
 		.map((user) => 
-			<option value={user._id}>{user.name}</option>);
+			<option key= {user._id} value={user._id}>{user.name}</option>);
 
 		const Chore= this.props.chores
 		.map((chore) =>
-			<option value={chore._id+"|"+chore.name+"|"+chore.pointValue} data-name={chore.name} data-points={chore.pointValue}>{chore.name} - {chore.pointValue}</option>);
+			<option key={chore._id} value={chore._id+"|"+chore.name+"|"+chore.pointValue} data-name={chore.name} data-points={chore.pointValue}>{chore.name} - {chore.pointValue}</option>);
 
 		var day1 = moment().format("L");
 		var day2 = moment().add(1, 'days').format('L');
@@ -74,8 +74,8 @@ class AddTask extends React.Component{
 							 Select Date
 							</option>
 
-						  	{dayOfWeek.map((day) => (
-						  	<option value={day}>
+						  	{dayOfWeek.map((day, index) => (
+						  	<option key={index} value={day}>
 						  	{day}
 						  	</option>
 						  	))}

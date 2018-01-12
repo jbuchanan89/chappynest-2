@@ -71,7 +71,7 @@ class Profile extends React.Component{
 						</div>
 
 					: 	<div className="row section">
-							<h1 class="profileHeader">Account Settings</h1>
+							<h1 className="profileHeader">Account Settings</h1>
 							<ul className="nav">
 								<a href="#addChores"><input type="submit" className="create" value="Create Household Chore"/></a>
 								<a href="#addUser"><input type="submit" className="create" value="Create Child Account"/></a>
@@ -93,15 +93,17 @@ class Profile extends React.Component{
 								<h2>Household Chores</h2>
 
 								<table>
-									<tr>
-										<th>Chore</th>
-										<th>Points</th>
-									</tr>
-							    	{
-							    		Object
-							    		.keys(this.state.chores)
-							    		.map(key => <Chore key={key} details={this.state.chores[key]} />)
-							    	}
+									<tbody>
+										<tr>
+											<th>Chore</th>
+											<th>Points</th>
+										</tr>
+								    	{
+								    		Object
+								    		.keys(this.state.chores)
+								    		.map(key => <Chore key={key} details={this.state.chores[key]} />)
+								    	}
+							    	</tbody>
 								</table>
 							</div>
 							<div id="addChores"className="row addChoreInput assignTask">
