@@ -9,6 +9,7 @@ class NewHomePage extends React.Component{
 
 	handleSubmit(event) {
 		event.preventDefault();
+		document.getElementById("load").classList.add('loader');
 		let user = {
 			name: this.nameInput.value,
 			username	: this.usernameInput.value,
@@ -26,7 +27,6 @@ class NewHomePage extends React.Component{
 		//let users = this.state.users;
 		//users.push(user);
 		//this.setState({users:users});
-		document.getElementById("load").classList.add('loader');
 		Client.addAccount(user, user => {
 			//console.log(user);
 			let self = this;
