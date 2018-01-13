@@ -39,6 +39,7 @@ class ChildDashboard extends React.Component{
 	}
 
 	render(){
+		var Day = moment().format('dddd'); 
 		var Date= moment().format("LL");
 		var childName=localStorage.getItem('ChappyNest-name');
 		return (
@@ -51,7 +52,7 @@ class ChildDashboard extends React.Component{
 
 				? 	<main className="row childDashboard">
 						<h1>{childName}'s Dashboard</h1>
-						<h2>{Date}</h2>
+						<h2>{Day}, {Date}</h2>
 						<div className="childChores">
 							<h3>Chores Today</h3>
 								<div className="dailyList">
