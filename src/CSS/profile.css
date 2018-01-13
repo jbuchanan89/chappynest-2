@@ -367,7 +367,8 @@
 }
 
 .section,
-.profileHeader  {
+.profileHeader,
+.parentDashboard h1  {
 	border-bottom: 1px solid #aaaaaa;
 	padding-bottom: 30px;
 }
