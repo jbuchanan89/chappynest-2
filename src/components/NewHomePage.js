@@ -9,7 +9,7 @@ class NewHomePage extends React.Component{
 
 	handleSubmit(event) {
 		event.preventDefault();
-		document.getElementById("load").classList.add('loader');
+		document.getElementById("sign-up-load").classList.add('loader');
 		let user = {
 			name: this.nameInput.value,
 			username	: this.usernameInput.value,
@@ -40,12 +40,11 @@ class NewHomePage extends React.Component{
 
 	handleLogin(event) {
 		event.preventDefault();
+		document.getElementById("login-load").classList.add('loader');
 		let user = {
 			username: this.usernameInput.value,
 			password: this.passwordInput.value
 		};
-
-		document.getElementById("load").classList.add('loader');
 		Client.login(user, user => {
 			if(user.hasOwnProperty('message')){
 				alert(user.message);
@@ -122,7 +121,7 @@ class NewHomePage extends React.Component{
 									<input className="btn" type="submit" value="Add User" name="Sign up!"/>
 								</form>
 
-								<div id="load">
+								<div id="sign-up-load">
 								</div>
 
 				      			<p>Already have an account? <span className="link" onClick={this.handleLoginLink}>Login</span></p>
@@ -136,7 +135,7 @@ class NewHomePage extends React.Component{
         							<input className="btn" type="submit" name="Login" />
 								</form>
 								
-								<div id="load">
+								<div id="login-load">
 								</div> 
 
 				      			<p>Dont have an account? <span className="link" onClick={this.handleSignUpLink.bind(this)}>Sign Up</span></p>
