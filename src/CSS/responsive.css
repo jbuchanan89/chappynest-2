@@ -5,6 +5,9 @@
 	/*  background-color: #a8d0e6;*/
 	}
 	
+	.header {
+		height: 700px;
+	}
 	.header p {
 		font-size: 30px;
 	}

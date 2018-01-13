@@ -1,18 +1,16 @@
 
 .header{
-  background: linear-gradient(to bottom right, #24305e, #a8d0e6);
-  /* background-color: #24305e; */
     background-image:
     linear-gradient(
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2)
     ),
-/*    url(https://images.unsplash.com/photo-1506485338023-6ce5f36692df?dpr=1&auto=compress,format&fit=crop&w=1050&h=&q=80&cs=tinysrgb&crop=);*/
-    url(https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
-    background-size: cover;
-    background-position: center center;
+    url('https://images.pexels.com/photos/139764/pexels-photo-139764.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+    background-size: 100% 100%;
+/*    background-position: center center;*/
     background-repeat: no-repeat;   
-    height: 600px;
+    height: 500px;
+    width: 100%;
     text-align: center;
 }
 
