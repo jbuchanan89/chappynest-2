@@ -6,10 +6,12 @@
 	}
 	
 	.header {
-		height: 700px;
+		height: 600px;
 	}
-	.header p {
-		font-size: 30px;
+
+	.header1 p {
+	  margin: 30px auto;
+	  font-size: 40px;
 	}
 
 	.header2 img {
