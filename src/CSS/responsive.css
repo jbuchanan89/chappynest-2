@@ -12,6 +12,7 @@
 	.header2 img {
 	  width: 200px;
 	}
+
 	.section1 {
 	  width: 50%;
 	  margin: 0;
@@ -20,7 +21,8 @@
 	  border: none;
 	}
 
-	.section1 h3{
+	.section1 h3,
+	.section2 h2{
 		font-size: 60px;
 	}
 
@@ -28,7 +30,6 @@
 	  width: 91.66%;
 	  height: 250px;
 	  margin: 20px 4.17% 0 4.17%;
-	  padding-left: 100px;
 	}
 
 	.section2 {
@@ -71,12 +72,12 @@
 	.nav-bar ul li {
 		display: inline-block;
 		float: right;
-		margin:20px 30px;
-		font-size: 20px;
+		margin: 15px 20px;
+		font-size: 25px;
 	}
 
 	.nav-bar p {
-		margin: 10px 50px;
+		margin: 10px 20px;
 	}
 
 	.assignTask,

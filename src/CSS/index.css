@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: Century Gothic;
+	font-family: 'Quicksand', sans-serif;
 }
 
 body {
@@ -10,11 +10,6 @@ body {
 
 .summary {
     height: 300px;
-}
-
-.App h1 {
-	font-family: Century Gothic;
-	font-size: 30px;
 }
 
 .dashboard {
@@ -35,7 +30,7 @@ body {
 .nav-bar ul li {
 	display: inline-block;
 	float: right;
-	margin:20px 10px;
+	margin:15px;
 	font-size: 20px;
 }
 
@@ -43,17 +38,21 @@ body {
 .nav-bar a:visited,
 .nav-bar a:hover,
 .nav-bar a:active {
-	color:  #374785;
+	color:  #FFF;
 	font-weight: bold;
 	text-decoration: none;
 }
 
+.nav-bar a:hover{
+	color: #215CA5;
+}
+
 .nav-bar p {
-	margin: 10px 0px 10px 30px;
+	margin: 10px 0px 10px 10px;
 	float: left;
 	color: #FFF;
-	font-family: 'Comfortaa', cursive;
-	font-size: 25px;
+	font-family: 'Kavivanar', san-serif;
+	font-size: 30px;
 }
 
 footer {

@@ -26,6 +26,7 @@ class NewHomePage extends React.Component{
 		//let users = this.state.users;
 		//users.push(user);
 		//this.setState({users:users});
+		document.getElementById("load").classList.add('loader');
 		Client.addAccount(user, user => {
 			//console.log(user);
 			let self = this;
@@ -43,6 +44,8 @@ class NewHomePage extends React.Component{
 			username: this.usernameInput.value,
 			password: this.passwordInput.value
 		};
+
+		document.getElementById("load").classList.add('loader');
 		Client.login(user, user => {
 			if(user.hasOwnProperty('message')){
 				alert(user.message);
@@ -82,10 +85,6 @@ class NewHomePage extends React.Component{
 				 	<div className="header1">
 				    <p>Organize Your Household with us!</p>
 				  	</div>
-				  
-				  	<div className="header2">
-				    	<img src={require("../Images/house.svg")} alt="house icon"/>
-					</div>
 				</div>
 				  
 				<main>
@@ -117,11 +116,14 @@ class NewHomePage extends React.Component{
 				    	<section id="sign-up">
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign Up</h2>
 								<form id="AddUser" onSubmit={this.handleSubmit.bind(this)}>
-									<input type="text" ref={(input) => { this.nameInput =input}} placeholder="name"/>
-								 	<input type="text" ref={(input) => { this.usernameInput =input}} placeholder="username"/>
-								 	<input type="password" ref={(input) => { this.passwordInput = input}} placeholder="password"/>
+									<input type="text" ref={(input) => { this.nameInput =input}} placeholder="name" required/>
+								 	<input type="text" ref={(input) => { this.usernameInput =input}} placeholder="username" required/>
+								 	<input type="password" ref={(input) => { this.passwordInput = input}} placeholder="password" required/>
 									<input className="btn" type="submit" value="Add User" name="Sign up!"/>
 								</form>
+
+								<div id="load">
+								</div>
 
 				      			<p>Already have an account? <span className="link" onClick={this.handleLoginLink}>Login</span></p>
 				      	</section>
@@ -133,6 +135,9 @@ class NewHomePage extends React.Component{
         							<input ref={(input) => { this.passwordInput =input}} placeholder="Password" type="password" className="password1" name="password" required/>
         							<input className="btn" type="submit" name="Login" />
 								</form>
+								
+								<div id="load">
+								</div> 
 
 				      			<p>Dont have an account? <span className="link" onClick={this.handleSignUpLink.bind(this)}>Sign Up</span></p>
 				    	</section>
@@ -144,7 +149,7 @@ class NewHomePage extends React.Component{
 						</ul>
 
 				</section>
-				    
+   
 				</main>
 			</div>
 			);
