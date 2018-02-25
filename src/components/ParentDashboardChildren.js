@@ -1,7 +1,6 @@
 import React from 'react';
 
 class  ParentDashboardChildren extends React.Component{
-
 	render(){
 
 		let taskContent = this.props.tasks.map(function(task){
@@ -24,25 +23,25 @@ class  ParentDashboardChildren extends React.Component{
 			}
 		}
 
-
-
 		return(
 		<div className="kidBox col-5">
-				<div className="row">
-
+			<div className="row">
 					<img src="https://image.flaticon.com/icons/svg/163/163801.svg" alt="avatar"/>
 					<p className="childName">{this.props.children.name}</p>
-	    		</div>	
+	    	</div>	
+
     		<p className="childUsername"><span className="label">Username:</span> {this.props.children.username} </p>
+	    	
 	    	<div className="row">
 	    		<ul className="task-content">{taskContent}</ul>
 	    	</div>
 
-    			<div className="row point-box">
-					<p className="points">Points: <span className="value">{pointValueContent}</span></p>
-				</div>
+    		<div className="row point-box">
+				<p className="points">Points: <span className="value">{pointValueContent}</span></p>
+			</div>
 		</div>	
 			)
 	}
 }
+
 export default ParentDashboardChildren;

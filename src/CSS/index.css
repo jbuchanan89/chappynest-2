@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
@@ -31,7 +32,7 @@ body {
 	display: inline-block;
 	float: right;
 	margin:15px;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .nav-bar a:link,
@@ -52,7 +53,7 @@ body {
 	float: left;
 	color: #FFF;
 	font-family: 'Kavivanar', san-serif;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 footer {
