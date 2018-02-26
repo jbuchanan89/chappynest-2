@@ -11,10 +11,10 @@ class NewHomePage extends React.Component{
 		event.preventDefault();
 		document.getElementById("sign-up-load").classList.add('loader');
 		let user = {
-			name: this.nameInput.value,
-			username	: this.usernameInput.value,
-			password: this.passwordInput.value,
-			type: 'parent'
+			name: 		this.nameInput.value,
+			username: 	this.usernameInput.value,
+			password: 	this.passwordInput.value,
+			type: 		'parent'
 		};
 
 		this.addUser(user);
@@ -24,16 +24,10 @@ class NewHomePage extends React.Component{
 	}
 
 	addUser(user){
-		//let users = this.state.users;
-		//users.push(user);
-		//this.setState({users:users});
 		Client.addAccount(user, user => {
-			//console.log(user);
 			let self = this;
 			this.props.loginUser(user,function(){
-				// self.props.history.push('/');
 				self.props.history.push('/'+user.type+'dashboard');
-
 			});
 		});
 	}
@@ -45,6 +39,7 @@ class NewHomePage extends React.Component{
 			username: this.usernameInput.value,
 			password: this.passwordInput.value
 		};
+		
 		Client.login(user, user => {
 			if(user.hasOwnProperty('message')){
 				alert(user.message);
