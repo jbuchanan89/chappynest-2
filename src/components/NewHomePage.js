@@ -12,8 +12,8 @@ class NewHomePage extends React.Component{
 		document.getElementById("sign-up-load").classList.add('loader');
 		let user = {
 			name: 		this.nameInput.value,
-			username: 	this.usernameInput.value,
-			password: 	this.passwordInput.value,
+			username: 	this.usernameInput2.value,
+			password: 	this.passwordInput2.value,
 			type: 		'parent'
 		};
 
@@ -39,7 +39,7 @@ class NewHomePage extends React.Component{
 			username: this.usernameInput.value,
 			password: this.passwordInput.value
 		};
-		
+
 		Client.login(user, user => {
 			if(user.hasOwnProperty('message')){
 				alert(user.message);
@@ -111,9 +111,9 @@ class NewHomePage extends React.Component{
 				      		<h2><i className="fa fa-sign-in" aria-hidden="true"></i> Sign Up</h2>
 								<form id="AddUser" onSubmit={this.handleSubmit.bind(this)}>
 									<input type="text" ref={(input) => { this.nameInput =input}} placeholder="name" required/>
-								 	<input type="text" ref={(input) => { this.usernameInput =input}} placeholder="username" required/>
-								 	<input type="password" ref={(input) => { this.passwordInput = input}} placeholder="password" required/>
-									<input className="btn" type="submit" value="Add User" name="Sign up!"/>
+								 	<input type="text" ref={(input) => { this.usernameInput2 =input}} placeholder="username" required/>
+								 	<input type="password" ref={(input) => { this.passwordInput2 = input}} placeholder="password" required/>
+									<input className="btn" type="submit" value="Sign Up!" name="Sign up!"/>
 								</form>
 
 								<div id="sign-up-load">
@@ -142,7 +142,7 @@ class NewHomePage extends React.Component{
 							<li><img src={require("../Images/wiping-swipe-for-floors.svg")} alt="house icon"/></li>
 						</ul>
 
-				</section>
+					</section>
    
 				</main>
 			</div>
